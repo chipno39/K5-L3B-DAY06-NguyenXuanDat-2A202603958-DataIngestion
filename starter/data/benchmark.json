@@ -1,0 +1,311 @@
+{
+  "benchmark_id": "fptu-handbook-2026-benchmark-v1",
+  "corpus_source_id": "fptu-handbook-2026",
+  "created_before_run": true,
+  "split_policy": "Chia cố định 15 câu dev (q01-q15) và 5 câu test (q16-q20) trước khi chạy bất kỳ cấu hình nào. Phân tầng đều theo chương nội dung (Nội quy, Đào tạo, Tài chính, Hỗ trợ SV, Thư viện, CNTT, Đời sống/Di chuyển) và loại câu hỏi (trực tiếp, diễn đạt lại, điều kiện/ngoại lệ, metadata filter). Có tổng cộng 6 câu kiểm tra metadata filter (4 câu ở dev: q07, q09, q12, q13; 2 câu ở test: q17, q18).",
+  "selection_criterion_locked_before_test": "Ưu tiên cấu hình có Evidence Hit@3 cao nhất trên tập dev; nếu bằng nhau thì xét tiếp Hit@1 trên tập dev, tính tuân thủ metadata filter (100%), điểm mạch lạc của chunk (Coherence /2) và độ đủ bằng chứng (Grounding /2).",
+  "total_questions": 20,
+  "dev_count": 15,
+  "test_count": 5,
+  "filter_questions_count": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Trường Đại học FPT được thành lập vào ngày tháng năm nào và theo quyết định số mấy của Thủ tướng Chính phủ?",
+      "expected_answer": "Thành lập ngày 08/09/2006 theo quyết định số 208/2006/QĐ-TTG của Thủ tướng Chính phủ.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 8,
+      "alt_gold_pages": [],
+      "evidence_quote": "Trường Đại học FPT thành lập ngày 08/09/2006 theo quyết định số\n208/2006/QĐ-TTG của Thủ tướng Chính phủ.",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Theo nội quy điểm danh, sinh viên vào lớp muộn quá bao nhiêu phút sẽ bị tính là vắng mặt ở slot học đó?",
+      "expected_answer": "Sinh viên vào lớp muộn quá 5 phút sẽ bị tính là vắng mặt ở slot đó.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 14,
+      "alt_gold_pages": [
+        16
+      ],
+      "evidence_quote": "Sinh viên vào lớp muộn quá 5 phút\nsẽ bị tính là vắng mặt ở slot đó.",
+      "alt_evidence_quotes": [
+        "Đến muộn giờ học quá 5\nphút;"
+      ],
+      "filter": null
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Giai đoạn 1 (Rèn luyện tập trung và Tiếng Anh dự bị) kéo dài bao lâu và sinh viên phải học những học phần điều kiện nào?",
+      "expected_answer": "Kéo dài từ 4 tháng đến 1 năm (tùy kết quả xếp lớp tiếng Anh đầu vào), gồm các học phần điều kiện: Rèn luyện tập trung (1 tháng), Vovinam, Nhạc cụ truyền thống và Tiếng Anh dự bị.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 21,
+      "alt_gold_pages": [
+        20
+      ],
+      "evidence_quote": "Thời gian đào tạo: 4 tháng - 1 năm (tuỳ theo kết quả xếp tiếng Anh đầu vào).\nTrong giai đoạn này, sinh viên sẽ học các học phần điều kiện: Rèn luyện tập\ntrung, Vovinam, Nhạc cụ truyền thống, Tiếng anh dự bị.",
+      "alt_evidence_quotes": [
+        "4 Tháng - 1 Năm 01.\nRèn luyện tập trung\nTiếng Anh dự bị"
+      ],
+      "filter": null
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên cần đạt tỷ lệ tích lũy tín chỉ tối thiểu bao nhiêu phần trăm từ Học kỳ 1 đến Học kỳ 5 để đủ điều kiện đi thực tập doanh nghiệp (OJT), và nếu chưa đạt thì phải làm gì?",
+      "expected_answer": "Đạt từ 90% tổng số tín chỉ từ Học kỳ 1 đến Học kỳ 5. Nếu ít hơn 90%, sinh viên cần đăng ký học lại các học phần nợ hoặc môn học chậm kỳ để đủ điều kiện đi OJT ở các học kỳ kế tiếp.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 23,
+      "alt_gold_pages": [],
+      "evidence_quote": "Sinh viên đạt từ 90% tổng số tín chỉ\ntừ Học kì 1 → Học kì 5.\nNếu tổng số tín chỉ ít hơn 90% sinh\nviên cần đăng ký học lại các học\nphần nợ hoặc môn học chậm kì để\nđủ điều kiện đi OJT ở các Học kì\nkế tiếp.",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Để được đăng ký đề tài Đồ án/Khóa luận tốt nghiệp (KLTN), sinh viên cần hoàn thành giai đoạn nào và tích lũy tối thiểu bao nhiêu phần trăm số tín chỉ của chương trình?",
+      "expected_answer": "Phải hoàn thành giai đoạn 3 (OJT) cùng các môn theo quy định và tích lũy tối thiểu 80% số tín chỉ trên tổng số tín chỉ của chương trình đào tạo (không kể GDTC và OJT).",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 24,
+      "alt_gold_pages": [],
+      "evidence_quote": "Tích lũy 80% số\ntín chỉ trên tổng\nsố tín chỉ của\nchương trình đào\ntạo (không kể\nGDTC và OJT).",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Khi làm đơn phúc khảo điểm thi, thời hạn nhận đơn và xử lý là mấy ngày, và trường hợp sinh viên trượt môn (fail môn) làm đơn phúc khảo thì kết quả cuối cùng được tính ra sao?",
+      "expected_answer": "Thời gian nhận đơn là 03 ngày sau deadline công bố điểm, thời gian xử lý là 05 ngày kể từ khi hết hạn nhận đơn. Nếu SV fail môn làm đơn phúc khảo thì vẫn đi thi Retake theo kế hoạch, điểm nào cao hơn (giữa Retake và Sau phúc khảo) sẽ được lấy làm kết quả cuối cùng.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 29,
+      "alt_gold_pages": [],
+      "evidence_quote": "Thời gian nhận đơn là 03 ngày sau deadline công bố\nđiểm theo kế hoạch.\nThời gian xử lý là 05 ngày kể từ thời điểm hết hạn\nnhận đơn.",
+      "alt_evidence_quotes": [
+        "SV fail môn, làm đơn phúc khảo v ẫn đi thi Retake\ntheo kế hoạch. Điểm nào cao hơn (Retake & Sau\nphúc khảo) sẽ lấy làm kết quả cuối cùng."
+      ],
+      "filter": null
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Mức thu học phí học lại sớm ngay trong kỳ hoặc kỳ kế tiếp khác gì so với mức học phí học lại thông thường?",
+      "expected_answer": "Học phí học lại sớm (ngay trong kỳ hoặc kỳ tiếp theo) bằng 50% học phí môn, trong khi học phí học lại thông thường (không học lại ngay trong kỳ hoặc kỳ tiếp theo) bằng 100% học phí môn.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 32,
+      "alt_gold_pages": [],
+      "evidence_quote": "Học phí học lại sớm (gồm học lại\nchính môn bị trượt hoặc học môn\nthay thế cho môn bị trượt) áp dụng\nđối với sinh viên học lại ngay trong kỳ\nhoặc kỳ tiếp theo bằng 50% học phí\nmôn. Học phí học lại thông thường áp\ndụng đối với sinh viên không học lại\nngay trong kỳ hoặc kỳ tiếp theo bằng\n100% học phí môn.",
+      "alt_evidence_quotes": [],
+      "filter": {
+        "section": "04_tai_chinh_hoc_phi"
+      }
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên xin thôi học trước ngày bắt đầu học kỳ, trong vòng 2 tuần đầu, hoặc sau 2 tuần kể từ ngày bắt đầu học kỳ sẽ được hoàn trả bao nhiêu phần trăm học phí thực nộp?",
+      "expected_answer": "Trước ngày bắt đầu khóa học/học kỳ được hoàn trả 80% học phí thực nộp (trừ phí bản quyền nếu có); trong vòng 2 tuần đầu được hoàn trả 50%; sau 2 tuần kể từ ngày bắt đầu sẽ không được hoàn trả học phí đã đóng.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 33,
+      "alt_gold_pages": [],
+      "evidence_quote": "Sinh viên thôi học trong vòng 2 tuần\nkể từ ngày bắt đầu của khóa học\nhoặc học kỳ sẽ được hoàn trả 50%\nhọc phí thực nộp sau khi trừ đi phí\nbản quyền (nếu có).\nSinh viên thôi học sau 2 tuần kể từ\nngày bắt đầu sẽ không được hoàn trả\nhọc phí đã đóng.",
+      "alt_evidence_quotes": [
+        "Sinh viên thôi học trước ngày bắt đầu\n(là ngày học hoặc tập trung đầu tiên)\ncủa khóa học hoặc học kỳ sẽ được\ntrả lại 80% học phí thực nộp trừ đi phí\nbản quyền (nếu có)."
+      ],
+      "filter": null
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Sinh viên ở giai đoạn học chính thức và giai đoạn học tiếng Anh chuẩn bị phải hoàn thành nghĩa vụ đóng học phí tối thiểu trước bao nhiêu ngày làm việc?",
+      "expected_answer": "Tối thiểu 05 ngày làm việc trước ngày bắt đầu kỳ học mới đối với giai đoạn học chính thức, và tối thiểu 03 ngày làm việc trước ngày đầu tiên đối với giai đoạn học tiếng Anh chuẩn bị.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 36,
+      "alt_gold_pages": [],
+      "evidence_quote": "Sinh viên có trách nhiệm hoàn thành\nnghĩa vụ học phí tối thiểu 05 ngày\nlàm việc trước ngày bắt đầu của\nkhóa học hoặc kỳ học mới đối với\ngiai đoạn học chính thức (gồm cả\ntrường hợp học tiếng Anh dự bị song\nsong với học chính thức) và tối thiểu\n03 ngày làm việc trước ngày đầu tiên\ncủa khóa học hoặc kỳ học mới đối\nvới giai đoạn học tiếng Anh chuẩn bị.",
+      "alt_evidence_quotes": [],
+      "filter": {
+        "section": "04_tai_chinh_hoc_phi"
+      }
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Trung tâm Dịch vụ sinh viên (SSC) tại cơ sở TP. Hồ Chí Minh đặt tại phòng nào, số điện thoại và địa chỉ email liên hệ là gì?",
+      "expected_answer": "Đặt tại Phòng 202, Trường Đại học FPT, Khu Công nghệ cao, phường Tăng Nhơn Phú, TP. Hồ Chí Minh; Email: sschcm@fe.edu.vn; SĐT: (028) 7300 5585.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 44,
+      "alt_gold_pages": [],
+      "evidence_quote": "Phòng 202, Trường Đại học FPT, Khu Công nghệ cao,\nphường Tăng Nhơn Phú, TP. Hồ Chí Minh.\nEmail: sschcm@fe.edu.vn",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Theo quy chế đánh giá điểm phong trào, sinh viên tham gia các kỳ thi học thuật cấp Quốc gia/khu vực như Olympic, ACM/ICPC, Robocon được cộng bao nhiêu điểm mỗi lần, và tổng điểm phong trào của sinh viên nằm trong khoảng nào?",
+      "expected_answer": "Được cộng 10 điểm phong trào (ĐPT)/1 lần tham gia kỳ thi Olympic, ACM/ICPC, Robocon cấp Quốc gia/khu vực (trang 55). Tổng điểm phong trào của sinh viên nằm trong khoảng từ 60 đến 100 điểm (trang 56).",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 55,
+      "alt_gold_pages": [
+        56
+      ],
+      "evidence_quote": "1.2. Được cộng 10 ĐPT/1 lần tham gia các kỳ thi\nOlympic, ACM/ICPC, Robocon hoặc các cuộc thi\nhọc thuật mang tầm Quốc gia/khu vực.",
+      "alt_evidence_quotes": [
+        "Điểm phong trào của sinh viên sẽ nằm trong khoảng từ 60 – 100 điểm."
+      ],
+      "filter": null
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Đối với tài liệu tham khảo tại thư viện, bạn đọc được phép mượn tối đa bao nhiêu cuốn, thời hạn mượn cho sách tiếng Việt và sách ngoại văn là bao lâu, và được gia hạn mấy lần?",
+      "expected_answer": "Được mượn tối đa 10 tên sách/tài liệu một lần; thời hạn mượn là 1 tuần (7 ngày) đối với tài liệu tiếng Việt và 2 tuần (14 ngày) đối với tài liệu ngoại văn; được gia hạn tối đa 4 lần khi chưa quá hạn.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 63,
+      "alt_gold_pages": [
+        64
+      ],
+      "evidence_quote": "5.5. Đối với tài liệu tham khảo: Bạn\nđọc được mượn tối đa 10 tên sách,\ntrong thời hạn 1 tuần/ tài liệu tiếng\nViệt, 2 tuần/ tài liệu ngoại văn và\nđược gia hạn 4 lần;",
+      "alt_evidence_quotes": [
+        "Số lượng mượn: Tối đa 10 tài liệu/\nlần, tùy theo nhu cầu.\n• Thời gian mượn: Tài liệu tiếng Việt:\n7 ngày; Tài liệu ngoại văn: 14 ngày.\n• Gia hạn: Tối đa 4 lần, chỉ áp dụng\nkhi tài liệu chưa quá hạn."
+      ],
+      "filter": {
+        "section": "06_thu_vien"
+      }
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Khi đặt mới hoặc đổi mật khẩu tài khoản WiFi nội bộ, quy định yêu cầu độ dài tối thiểu và các thành phần ký tự bắt buộc như thế nào?",
+      "expected_answer": "Mật khẩu không được chứa họ tên và mã số sinh viên, phải có tối thiểu 8 ký tự, bao gồm chữ hoa (A-Z), chữ thường (a-z), chữ số (0-9) và ký tự đặc biệt.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 68,
+      "alt_gold_pages": [],
+      "evidence_quote": "Mật khẩu không chứa họ và tên và\nmã số sinh viên.\n• Mật khẩu phải có tối thiểu 8 ký\ntự, bao gồm ít nhất một trong các\nloại sau:",
+      "alt_evidence_quotes": [],
+      "filter": {
+        "section": "07_cntt_it_support"
+      }
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Tuyến xe đưa đón miễn phí F-bus hoạt động vào những ngày nào trong tuần, kết nối với những tuyến xe buýt số mấy và dừng trả sinh viên tại đâu trong trường?",
+      "expected_answer": "F-bus hoạt động từ thứ Hai đến thứ Bảy, hoàn toàn miễn phí cho sinh viên, giảng viên, CBNV ĐH FPT. Xe kết nối các tuyến buýt số 55, 56 và 99, đón từ trạm ĐH Giao thông vận tải (đường Lê Văn Việt) đến sảnh Trống Đồng - Trường Đại học FPT.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 104,
+      "alt_gold_pages": [],
+      "evidence_quote": "F-bus là tuyến xe đưa rước hoàn toàn\nmiễn phí dành cho sinh viên trường\nĐại học FPT. F-bus kết nối các tuyến\nbus sinh viên ĐH FPT thường sử\ndụng như: xe số 55, xuất phát từ Khu\nCông viên Phần mềm Quang Trung -\nTP.HCM, xe số 56 xuất phát từ Bến Xe\nChợ Lớn - Quận 6 và xe số 99",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Thiết bị quan trắc chất lượng không khí ngoài trời Air Visual Outdoor (AVO) lắp đặt tại 5 campus của FPTU nặng bao nhiêu và hiển thị những thông số nào theo thời gian thực?",
+      "expected_answer": "Thiết bị nặng 0,9kg, hiển thị 7 thông số theo thời gian thực gồm: bụi mịn PM2.5, PM1.0, PM10; nhiệt độ; độ ẩm; áp suất không khí và chỉ số chất lượng không khí (AQI*).",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 92,
+      "alt_gold_pages": [],
+      "evidence_quote": "Hệ thống\ncho phép hiển thị 7 thông số theo thời gian\nthực, bao gồm: bụi mịn PM2.5, PM1.0, PM10;\nnhiệt độ; độ ẩm; áp suất không khí và chỉ số\nchất lượng không khí (AQI*).",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q16",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Sinh viên đã qua môn (pass môn) sau kỳ thi Final muốn đăng ký thi Cải thiện điểm thì phải nộp đơn trong thời hạn nào, có phải đóng phí không và điểm số được tính ra sao?",
+      "expected_answer": "Nộp đơn trên FAP từ lúc công bố điểm đến 12 giờ trưa trước ngày thi Retake, không phải đóng phí. Khi thi cải thiện, điểm Final ban đầu sẽ bị hủy và điểm thi Cải thiện sẽ là kết quả cuối cùng.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 30,
+      "alt_gold_pages": [],
+      "evidence_quote": "Sinh viên pass môn sau final nộp đơn trong thời\nhạn từ lúc công bố điểm đến 12 giờ trưa trước\nngày thi Retake.\nĐược tổ chức cùng lúc với kỳ thi Retake.\nLàm đơn trên FAP.\nKhông đóng phí.\nĐiểm Final bị hủy, điểm thi Cải thiện sẽ là kết\nquả cuối cùng.",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q17",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Hình thức thanh toán trả góp học phí bằng thẻ tín dụng qua FPT Pay chỉ áp dụng cho khoản thanh toán có giá trị tối thiểu từ bao nhiêu tiền trở lên?",
+      "expected_answer": "Hình thức trả góp chỉ áp dụng cho các khoản thanh toán từ 3.000.000đ trở lên.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 39,
+      "alt_gold_pages": [],
+      "evidence_quote": "Hình thức trả góp chỉ áp\ndụng cho các khoản thanh\ntoán từ 3.000.000đ trở lên.",
+      "alt_evidence_quotes": [],
+      "filter": {
+        "section": "04_tai_chinh_hoc_phi"
+      }
+    },
+    {
+      "id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "Nếu sinh viên trả chậm tài liệu mượn tại thư viện thì mức tiền phạt quá hạn mỗi ngày là bao nhiêu, và nếu trả chậm trên 30 ngày thì bị xử lý thế nào?",
+      "expected_answer": "Mức tiền phạt trả chậm là 5.000 đồng/tài liệu/ngày (tính cả ngày nghỉ, lễ; tối đa bằng giá trị tài liệu). Nếu trả chậm trên 30 ngày, ngoài tiền trả chậm sinh viên phải nộp bổ sung một khoản bằng giá nhập tài liệu.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 65,
+      "alt_gold_pages": [
+        64
+      ],
+      "evidence_quote": "Sinh viên trả chậm tài liệu mượn thư viện phải nộp tiền trả chậm tính từ ngày quá\nhạn đầu tiên đến ngày thực tế trả tài liệu (gồm cả ngày nghỉ và ngày lễ). Sinh\nviên trả chậm tài liệu trên 30 ngày ngoài tiền trả chậm sẽ phải nộp bổ sung một\nkhoản bằng giá nhập tài liệu.",
+      "alt_evidence_quotes": [
+        "6.3 Trường hợp mượn tài liệu quá hạn\nsẽ phải nộp tiền quá hạn 5.000đ/\nngày/1 cuốn (tính cả ngày nghỉ);"
+      ],
+      "filter": {
+        "section": "06_thu_vien"
+      }
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Đối với sinh viên các ngành Trí tuệ nhân tạo hoặc Thiết kế vi mạch, cấu hình laptop tối thiểu yêu cầu RAM và GPU ra sao, và quy định sử dụng Macbook trong kỳ thi như thế nào?",
+      "expected_answer": "Cấu hình tối thiểu yêu cầu CPU Core i7 (thế hệ 12 trở lên)/Ultra 7/Ryzen 7, GPU rời >= 8 GB, RAM >= 32 GB, SSD >= 512 GB. Sinh viên được dùng Macbook khi học, nhưng trong kỳ thi bắt buộc dùng máy chạy Windows (ưu tiên Windows 11) và không được phép chạy máy ảo Windows trên Macbook (như VMware, Parallels, VirtualBox).",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 75,
+      "alt_gold_pages": [],
+      "evidence_quote": "Trong quá trình học: Sinh viên được sử dụng Macbook.\n• Trong kỳ thi: Do đặc thù của phần mềm thi, sinh viên cần sử dụng máy tính chạy hệ\nđiều hành Windows (ưu tiên Windows 11).\n• Các hình thức chạy máy ảo Windows trên Macbook (như VMware, Parallels, VirtualBox...)\nlà không được phép trong phòng thi.",
+      "alt_evidence_quotes": [],
+      "filter": null
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "Khi di chuyển bằng tuyến Metro số 1 để đến Trường Đại học FPT, sinh viên cần xuống tại nhà ga nào và đón tiếp tuyến xe buýt điện số mấy ngay đối diện ga?",
+      "expected_answer": "Sinh viên đi tuyến Metro số 1 xuống tại ga Khu Công nghệ cao, sau đó ra khỏi ga sẽ thấy trạm xe buýt điện số 165 ngay đối diện (trên đường Song Hành trái Xa lộ Hà Nội) để đi tiếp đến Trường Đại học FPT.",
+      "gold_source_id": "fptu-handbook-2026",
+      "gold_page": 108,
+      "alt_gold_pages": [],
+      "evidence_quote": "Sinh viên lên tuyến Metro số 1\nvà xuống tại ga Khu Công nghệ\ncao. Điểm đến của bạn là ga Khu\nCông nghệ cao.",
+      "alt_evidence_quotes": [
+        "Tiếp theo, Ra khỏi ga Khu\nCông nghệ cao, bạn sẽ thấy trạm\nxe buýt điện số 165 ngay đối diện,\ntrên đường Song Hành trái Xa lộ\nHà Nội."
+      ],
+      "filter": null
+    }
+  ]
+}

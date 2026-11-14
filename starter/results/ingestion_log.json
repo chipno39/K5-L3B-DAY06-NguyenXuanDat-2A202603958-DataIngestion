@@ -1,0 +1,140 @@
+{
+  "run_timestamp": "2026-11-14T03:06:53.475955+00:00",
+  "corpus_source_id": "fptu-handbook-2026",
+  "source_path": "data/2026_So-tay-TSV_compressed.pdf",
+  "total_physical_pages": 112,
+  "valid_content_pages_count": 94,
+  "excluded_pages_count": 18,
+  "excluded_pages_detail": [
+    {
+      "page": 1,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 2,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 3,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_front_matter",
+      "raw_chars": 85,
+      "normalized_chars": 85
+    },
+    {
+      "page": 4,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_table_of_contents",
+      "raw_chars": 60,
+      "normalized_chars": 60
+    },
+    {
+      "page": 5,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_table_of_contents",
+      "raw_chars": 255,
+      "normalized_chars": 255
+    },
+    {
+      "page": 6,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_front_matter",
+      "raw_chars": 202,
+      "normalized_chars": 195
+    },
+    {
+      "page": 7,
+      "section": "01_gioi_thieu_chung",
+      "reason": "excluded_section_divider",
+      "raw_chars": 51,
+      "normalized_chars": 51
+    },
+    {
+      "page": 13,
+      "section": "02_noi_quy_sinh_vien",
+      "reason": "excluded_section_divider",
+      "raw_chars": 52,
+      "normalized_chars": 52
+    },
+    {
+      "page": 19,
+      "section": "03_quy_che_dao_tao",
+      "reason": "excluded_section_divider",
+      "raw_chars": 60,
+      "normalized_chars": 60
+    },
+    {
+      "page": 31,
+      "section": "04_tai_chinh_hoc_phi",
+      "reason": "excluded_section_divider",
+      "raw_chars": 54,
+      "normalized_chars": 54
+    },
+    {
+      "page": 40,
+      "section": "05_ho_tro_sinh_vien",
+      "reason": "excluded_section_divider",
+      "raw_chars": 61,
+      "normalized_chars": 61
+    },
+    {
+      "page": 54,
+      "section": "05_ho_tro_sinh_vien",
+      "reason": "excluded_section_divider",
+      "raw_chars": 85,
+      "normalized_chars": 85
+    },
+    {
+      "page": 58,
+      "section": "06_thu_vien",
+      "reason": "excluded_section_divider",
+      "raw_chars": 53,
+      "normalized_chars": 53
+    },
+    {
+      "page": 66,
+      "section": "07_cntt_it_support",
+      "reason": "excluded_section_divider",
+      "raw_chars": 64,
+      "normalized_chars": 64
+    },
+    {
+      "page": 85,
+      "section": "08_nhung_dieu_can_biet",
+      "reason": "excluded_section_divider",
+      "raw_chars": 54,
+      "normalized_chars": 54
+    },
+    {
+      "page": 109,
+      "section": "09_cam_ket_trung_thuc",
+      "reason": "excluded_section_divider",
+      "raw_chars": 68,
+      "normalized_chars": 68
+    },
+    {
+      "page": 111,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 112,
+      "section": "00_bia_va_muc_luc",
+      "reason": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    }
+  ],
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dimensions": 384,
+  "vector_store": "PostgreSQL 16.16 + pgvector 0.8.7 (exact cosine distance <=>)",
+  "cost_usd": 0.0
+}

@@ -45,3 +45,28 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## 4. Thông tin bài nộp — Hướng dẫn Setup, Chạy và Đường dẫn dữ liệu
+
+- **Họ và tên:** Nguyễn Xuân Đạt (`2A202603958` · Lớp `L3B`)
+- **Thông tin học viên:** [STUDENT.md](STUDENT.md)
+- **Báo cáo cá nhân hoàn chỉnh:** [report/individual/2A202603958_NguyenXuanDat.md](report/individual/2A202603958_NguyenXuanDat.md) (và [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md))
+
+### Đường dẫn dữ liệu, mã nguồn và kết quả
+- **Dữ liệu gốc & Manifest (`94` trang hợp lệ / `112` trang vật lý):** [data/2026_So-tay-TSV_compressed.pdf](data/2026_So-tay-TSV_compressed.pdf) và [data/manifest.json](data/manifest.json)
+- **Bộ câu hỏi Benchmark (`20` câu: `15 dev` / `5 test`):** [benchmark/questions.json](benchmark/questions.json)
+- **Mã nguồn Pipeline:** [starter/src/](starter/src/) (`ingestion.py`, `chunking.py`, `embeddings.py`, `store.py`, `evaluation.py`, `run.py`)
+- **Nhật ký thí nghiệm:** [artifacts/experiment_log.csv](artifacts/experiment_log.csv)
+- **Kết quả, Trace Top-3 & Audit thủ công:** [results/ingestion_log.json](results/ingestion_log.json), [results/strategy_stats.json](results/strategy_stats.json), [results/metrics_summary.json](results/metrics_summary.json), [results/traces.json](results/traces.json), [results/manual_audit.json](results/manual_audit.json)
+
+### Cách Setup và Chạy lại Pipeline
+```powershell
+cd starter
+Copy-Item .env.example .env
+docker compose up -d
+pip install -r requirements.txt
+python scripts/check_setup.py
+python -m src.run
+```

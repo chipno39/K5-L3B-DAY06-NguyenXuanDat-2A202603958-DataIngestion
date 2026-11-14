@@ -1,0 +1,1108 @@
+{
+  "source_id": "fptu-handbook-2026",
+  "title": "Sổ tay Tân sinh viên Trường Đại học FPT (2026)",
+  "source_path_or_url": "data/2026_So-tay-TSV_compressed.pdf",
+  "publisher": "Trường Đại học FPT (FPT University)",
+  "license_or_permission": "Tài liệu hướng dẫn sinh viên công khai của Trường Đại học FPT (Public Student Handbook), không chứa dữ liệu mật hoặc thông tin định danh cá nhân (PII), được phép sử dụng cho mục đích học tập và nghiên cứu.",
+  "accessed_at": "2026-11-14T09:35:00+07:00",
+  "version_or_snapshot": "Ấn bản năm học 2025-2026 (Khóa 22)",
+  "language": "vi",
+  "document_type": "student_handbook",
+  "total_physical_pages": 112,
+  "valid_content_pages_count": 94,
+  "total_normalized_chars_valid_pages": 101194,
+  "page_counting_rule": "Chỉ tính các trang vật lý có nội dung thông tin/quy định thực tế (>150 ký tự sau chuẩn hóa). Loại trừ hoàn toàn: trang bìa/ảnh toàn trang không có chữ (trang 1, 2, 111, 112), trang thông tin cá nhân/trích dẫn đầu sách (trang 3, 6), trang Mục lục (trang 4, 5), và 10 trang bìa phân mục chương (trang 7, 13, 19, 31, 40, 54, 58, 66, 85, 109). Tổng số trang nội dung hợp lệ: 94/112 trang (đạt yêu cầu >= 30 trang).",
+  "valid_page_numbers": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    55,
+    56,
+    57,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110
+  ],
+  "excluded_pages": [
+    {
+      "page": 1,
+      "reason": "excluded_cover_or_blank_photo",
+      "normalized_chars": 0
+    },
+    {
+      "page": 2,
+      "reason": "excluded_cover_or_blank_photo",
+      "normalized_chars": 0
+    },
+    {
+      "page": 3,
+      "reason": "excluded_front_matter",
+      "normalized_chars": 85
+    },
+    {
+      "page": 4,
+      "reason": "excluded_table_of_contents",
+      "normalized_chars": 60
+    },
+    {
+      "page": 5,
+      "reason": "excluded_table_of_contents",
+      "normalized_chars": 255
+    },
+    {
+      "page": 6,
+      "reason": "excluded_front_matter",
+      "normalized_chars": 195
+    },
+    {
+      "page": 7,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 51
+    },
+    {
+      "page": 13,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 52
+    },
+    {
+      "page": 19,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 60
+    },
+    {
+      "page": 31,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 54
+    },
+    {
+      "page": 40,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 61
+    },
+    {
+      "page": 54,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 85
+    },
+    {
+      "page": 58,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 53
+    },
+    {
+      "page": 66,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 64
+    },
+    {
+      "page": 85,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 54
+    },
+    {
+      "page": 109,
+      "reason": "excluded_section_divider",
+      "normalized_chars": 68
+    },
+    {
+      "page": 111,
+      "reason": "excluded_cover_or_blank_photo",
+      "normalized_chars": 0
+    },
+    {
+      "page": 112,
+      "reason": "excluded_cover_or_blank_photo",
+      "normalized_chars": 0
+    }
+  ],
+  "metadata_schema": {
+    "document_id": "fptu-handbook-2026 (string, định danh tài liệu gốc)",
+    "source": "data/2026_So-tay-TSV_compressed.pdf (string, đường dẫn file nguồn)",
+    "page": "Số trang vật lý PDF từ 1 đến 112 (integer, dùng để truy vết nguồn chính xác)",
+    "section": "Mã chương/phần nội dung trích xuất từ Mục lục trang 5 (string, dùng làm trường filter trong Chiến lược C): 01_gioi_thieu_chung, 02_noi_quy_sinh_vien, 03_quy_che_dao_tao, 04_tai_chinh_hoc_phi, 05_ho_tro_sinh_vien, 06_thu_vien, 07_cntt_it_support, 08_nhung_dieu_can_biet, 09_cam_ket_trung_thuc",
+    "document_type": "student_handbook (string)"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "page_id": "fptu-handbook-2026:p001",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 2,
+      "page_id": "fptu-handbook-2026:p002",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 3,
+      "page_id": "fptu-handbook-2026:p003",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_front_matter",
+      "raw_chars": 85,
+      "normalized_chars": 85
+    },
+    {
+      "page": 4,
+      "page_id": "fptu-handbook-2026:p004",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_table_of_contents",
+      "raw_chars": 60,
+      "normalized_chars": 60
+    },
+    {
+      "page": 5,
+      "page_id": "fptu-handbook-2026:p005",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_table_of_contents",
+      "raw_chars": 255,
+      "normalized_chars": 255
+    },
+    {
+      "page": 6,
+      "page_id": "fptu-handbook-2026:p006",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_front_matter",
+      "raw_chars": 202,
+      "normalized_chars": 195
+    },
+    {
+      "page": 7,
+      "page_id": "fptu-handbook-2026:p007",
+      "section": "01_gioi_thieu_chung",
+      "status": "excluded_section_divider",
+      "raw_chars": 51,
+      "normalized_chars": 51
+    },
+    {
+      "page": 8,
+      "page_id": "fptu-handbook-2026:p008",
+      "section": "01_gioi_thieu_chung",
+      "status": "valid_content",
+      "raw_chars": 364,
+      "normalized_chars": 359
+    },
+    {
+      "page": 9,
+      "page_id": "fptu-handbook-2026:p009",
+      "section": "01_gioi_thieu_chung",
+      "status": "valid_content",
+      "raw_chars": 836,
+      "normalized_chars": 814
+    },
+    {
+      "page": 10,
+      "page_id": "fptu-handbook-2026:p010",
+      "section": "01_gioi_thieu_chung",
+      "status": "valid_content",
+      "raw_chars": 1173,
+      "normalized_chars": 1150
+    },
+    {
+      "page": 11,
+      "page_id": "fptu-handbook-2026:p011",
+      "section": "01_gioi_thieu_chung",
+      "status": "valid_content",
+      "raw_chars": 1115,
+      "normalized_chars": 1093
+    },
+    {
+      "page": 12,
+      "page_id": "fptu-handbook-2026:p012",
+      "section": "01_gioi_thieu_chung",
+      "status": "valid_content",
+      "raw_chars": 402,
+      "normalized_chars": 398
+    },
+    {
+      "page": 13,
+      "page_id": "fptu-handbook-2026:p013",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "excluded_section_divider",
+      "raw_chars": 52,
+      "normalized_chars": 52
+    },
+    {
+      "page": 14,
+      "page_id": "fptu-handbook-2026:p014",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1101,
+      "normalized_chars": 1083
+    },
+    {
+      "page": 15,
+      "page_id": "fptu-handbook-2026:p015",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1603,
+      "normalized_chars": 1581
+    },
+    {
+      "page": 16,
+      "page_id": "fptu-handbook-2026:p016",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1108,
+      "normalized_chars": 1093
+    },
+    {
+      "page": 17,
+      "page_id": "fptu-handbook-2026:p017",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1596,
+      "normalized_chars": 1559
+    },
+    {
+      "page": 18,
+      "page_id": "fptu-handbook-2026:p018",
+      "section": "02_noi_quy_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 602,
+      "normalized_chars": 593
+    },
+    {
+      "page": 19,
+      "page_id": "fptu-handbook-2026:p019",
+      "section": "03_quy_che_dao_tao",
+      "status": "excluded_section_divider",
+      "raw_chars": 60,
+      "normalized_chars": 60
+    },
+    {
+      "page": 20,
+      "page_id": "fptu-handbook-2026:p020",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 724,
+      "normalized_chars": 715
+    },
+    {
+      "page": 21,
+      "page_id": "fptu-handbook-2026:p021",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 783,
+      "normalized_chars": 780
+    },
+    {
+      "page": 22,
+      "page_id": "fptu-handbook-2026:p022",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 517,
+      "normalized_chars": 510
+    },
+    {
+      "page": 23,
+      "page_id": "fptu-handbook-2026:p023",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 920,
+      "normalized_chars": 909
+    },
+    {
+      "page": 24,
+      "page_id": "fptu-handbook-2026:p024",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 654,
+      "normalized_chars": 627
+    },
+    {
+      "page": 25,
+      "page_id": "fptu-handbook-2026:p025",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 337,
+      "normalized_chars": 328
+    },
+    {
+      "page": 26,
+      "page_id": "fptu-handbook-2026:p026",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 1077,
+      "normalized_chars": 1046
+    },
+    {
+      "page": 27,
+      "page_id": "fptu-handbook-2026:p027",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 1143,
+      "normalized_chars": 1084
+    },
+    {
+      "page": 28,
+      "page_id": "fptu-handbook-2026:p028",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 677,
+      "normalized_chars": 670
+    },
+    {
+      "page": 29,
+      "page_id": "fptu-handbook-2026:p029",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 830,
+      "normalized_chars": 820
+    },
+    {
+      "page": 30,
+      "page_id": "fptu-handbook-2026:p030",
+      "section": "03_quy_che_dao_tao",
+      "status": "valid_content",
+      "raw_chars": 802,
+      "normalized_chars": 793
+    },
+    {
+      "page": 31,
+      "page_id": "fptu-handbook-2026:p031",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "excluded_section_divider",
+      "raw_chars": 54,
+      "normalized_chars": 54
+    },
+    {
+      "page": 32,
+      "page_id": "fptu-handbook-2026:p032",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1753,
+      "normalized_chars": 1709
+    },
+    {
+      "page": 33,
+      "page_id": "fptu-handbook-2026:p033",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1803,
+      "normalized_chars": 1759
+    },
+    {
+      "page": 34,
+      "page_id": "fptu-handbook-2026:p034",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 929,
+      "normalized_chars": 918
+    },
+    {
+      "page": 35,
+      "page_id": "fptu-handbook-2026:p035",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1226,
+      "normalized_chars": 1213
+    },
+    {
+      "page": 36,
+      "page_id": "fptu-handbook-2026:p036",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1085,
+      "normalized_chars": 1059
+    },
+    {
+      "page": 37,
+      "page_id": "fptu-handbook-2026:p037",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1000,
+      "normalized_chars": 968
+    },
+    {
+      "page": 38,
+      "page_id": "fptu-handbook-2026:p038",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 1010,
+      "normalized_chars": 982
+    },
+    {
+      "page": 39,
+      "page_id": "fptu-handbook-2026:p039",
+      "section": "04_tai_chinh_hoc_phi",
+      "status": "valid_content",
+      "raw_chars": 604,
+      "normalized_chars": 591
+    },
+    {
+      "page": 40,
+      "page_id": "fptu-handbook-2026:p040",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "excluded_section_divider",
+      "raw_chars": 61,
+      "normalized_chars": 61
+    },
+    {
+      "page": 41,
+      "page_id": "fptu-handbook-2026:p041",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 642,
+      "normalized_chars": 630
+    },
+    {
+      "page": 42,
+      "page_id": "fptu-handbook-2026:p042",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 870,
+      "normalized_chars": 865
+    },
+    {
+      "page": 43,
+      "page_id": "fptu-handbook-2026:p043",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 215,
+      "normalized_chars": 215
+    },
+    {
+      "page": 44,
+      "page_id": "fptu-handbook-2026:p044",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 421,
+      "normalized_chars": 416
+    },
+    {
+      "page": 45,
+      "page_id": "fptu-handbook-2026:p045",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1717,
+      "normalized_chars": 1677
+    },
+    {
+      "page": 46,
+      "page_id": "fptu-handbook-2026:p046",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1634,
+      "normalized_chars": 1593
+    },
+    {
+      "page": 47,
+      "page_id": "fptu-handbook-2026:p047",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 657,
+      "normalized_chars": 634
+    },
+    {
+      "page": 48,
+      "page_id": "fptu-handbook-2026:p048",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 2569,
+      "normalized_chars": 2506
+    },
+    {
+      "page": 49,
+      "page_id": "fptu-handbook-2026:p049",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1576,
+      "normalized_chars": 1535
+    },
+    {
+      "page": 50,
+      "page_id": "fptu-handbook-2026:p050",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 2416,
+      "normalized_chars": 2355
+    },
+    {
+      "page": 51,
+      "page_id": "fptu-handbook-2026:p051",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 820,
+      "normalized_chars": 817
+    },
+    {
+      "page": 52,
+      "page_id": "fptu-handbook-2026:p052",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1081,
+      "normalized_chars": 1076
+    },
+    {
+      "page": 53,
+      "page_id": "fptu-handbook-2026:p053",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 854,
+      "normalized_chars": 853
+    },
+    {
+      "page": 54,
+      "page_id": "fptu-handbook-2026:p054",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "excluded_section_divider",
+      "raw_chars": 85,
+      "normalized_chars": 85
+    },
+    {
+      "page": 55,
+      "page_id": "fptu-handbook-2026:p055",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 882,
+      "normalized_chars": 870
+    },
+    {
+      "page": 56,
+      "page_id": "fptu-handbook-2026:p056",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1284,
+      "normalized_chars": 1265
+    },
+    {
+      "page": 57,
+      "page_id": "fptu-handbook-2026:p057",
+      "section": "05_ho_tro_sinh_vien",
+      "status": "valid_content",
+      "raw_chars": 1198,
+      "normalized_chars": 1174
+    },
+    {
+      "page": 58,
+      "page_id": "fptu-handbook-2026:p058",
+      "section": "06_thu_vien",
+      "status": "excluded_section_divider",
+      "raw_chars": 53,
+      "normalized_chars": 53
+    },
+    {
+      "page": 59,
+      "page_id": "fptu-handbook-2026:p059",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 588,
+      "normalized_chars": 572
+    },
+    {
+      "page": 60,
+      "page_id": "fptu-handbook-2026:p060",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 2134,
+      "normalized_chars": 2075
+    },
+    {
+      "page": 61,
+      "page_id": "fptu-handbook-2026:p061",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 2527,
+      "normalized_chars": 2469
+    },
+    {
+      "page": 62,
+      "page_id": "fptu-handbook-2026:p062",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 1595,
+      "normalized_chars": 1567
+    },
+    {
+      "page": 63,
+      "page_id": "fptu-handbook-2026:p063",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 2396,
+      "normalized_chars": 2345
+    },
+    {
+      "page": 64,
+      "page_id": "fptu-handbook-2026:p064",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 1741,
+      "normalized_chars": 1703
+    },
+    {
+      "page": 65,
+      "page_id": "fptu-handbook-2026:p065",
+      "section": "06_thu_vien",
+      "status": "valid_content",
+      "raw_chars": 1467,
+      "normalized_chars": 1456
+    },
+    {
+      "page": 66,
+      "page_id": "fptu-handbook-2026:p066",
+      "section": "07_cntt_it_support",
+      "status": "excluded_section_divider",
+      "raw_chars": 64,
+      "normalized_chars": 64
+    },
+    {
+      "page": 67,
+      "page_id": "fptu-handbook-2026:p067",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 258,
+      "normalized_chars": 238
+    },
+    {
+      "page": 68,
+      "page_id": "fptu-handbook-2026:p068",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 1296,
+      "normalized_chars": 1269
+    },
+    {
+      "page": 69,
+      "page_id": "fptu-handbook-2026:p069",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 481,
+      "normalized_chars": 480
+    },
+    {
+      "page": 70,
+      "page_id": "fptu-handbook-2026:p070",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 409,
+      "normalized_chars": 406
+    },
+    {
+      "page": 71,
+      "page_id": "fptu-handbook-2026:p071",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 268,
+      "normalized_chars": 268
+    },
+    {
+      "page": 72,
+      "page_id": "fptu-handbook-2026:p072",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 504,
+      "normalized_chars": 499
+    },
+    {
+      "page": 73,
+      "page_id": "fptu-handbook-2026:p073",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 571,
+      "normalized_chars": 567
+    },
+    {
+      "page": 74,
+      "page_id": "fptu-handbook-2026:p074",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 583,
+      "normalized_chars": 580
+    },
+    {
+      "page": 75,
+      "page_id": "fptu-handbook-2026:p075",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 1083,
+      "normalized_chars": 1075
+    },
+    {
+      "page": 76,
+      "page_id": "fptu-handbook-2026:p076",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 804,
+      "normalized_chars": 790
+    },
+    {
+      "page": 77,
+      "page_id": "fptu-handbook-2026:p077",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 428,
+      "normalized_chars": 424
+    },
+    {
+      "page": 78,
+      "page_id": "fptu-handbook-2026:p078",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 415,
+      "normalized_chars": 414
+    },
+    {
+      "page": 79,
+      "page_id": "fptu-handbook-2026:p079",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 219,
+      "normalized_chars": 219
+    },
+    {
+      "page": 80,
+      "page_id": "fptu-handbook-2026:p080",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 638,
+      "normalized_chars": 627
+    },
+    {
+      "page": 81,
+      "page_id": "fptu-handbook-2026:p081",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 288,
+      "normalized_chars": 287
+    },
+    {
+      "page": 82,
+      "page_id": "fptu-handbook-2026:p082",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 314,
+      "normalized_chars": 314
+    },
+    {
+      "page": 83,
+      "page_id": "fptu-handbook-2026:p083",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 687,
+      "normalized_chars": 677
+    },
+    {
+      "page": 84,
+      "page_id": "fptu-handbook-2026:p084",
+      "section": "07_cntt_it_support",
+      "status": "valid_content",
+      "raw_chars": 505,
+      "normalized_chars": 501
+    },
+    {
+      "page": 85,
+      "page_id": "fptu-handbook-2026:p085",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "excluded_section_divider",
+      "raw_chars": 54,
+      "normalized_chars": 54
+    },
+    {
+      "page": 86,
+      "page_id": "fptu-handbook-2026:p086",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1401,
+      "normalized_chars": 1366
+    },
+    {
+      "page": 87,
+      "page_id": "fptu-handbook-2026:p087",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 2487,
+      "normalized_chars": 2431
+    },
+    {
+      "page": 88,
+      "page_id": "fptu-handbook-2026:p088",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1758,
+      "normalized_chars": 1735
+    },
+    {
+      "page": 89,
+      "page_id": "fptu-handbook-2026:p089",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1328,
+      "normalized_chars": 1299
+    },
+    {
+      "page": 90,
+      "page_id": "fptu-handbook-2026:p090",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1769,
+      "normalized_chars": 1738
+    },
+    {
+      "page": 91,
+      "page_id": "fptu-handbook-2026:p091",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1983,
+      "normalized_chars": 1959
+    },
+    {
+      "page": 92,
+      "page_id": "fptu-handbook-2026:p092",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 2562,
+      "normalized_chars": 2508
+    },
+    {
+      "page": 93,
+      "page_id": "fptu-handbook-2026:p093",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 846,
+      "normalized_chars": 833
+    },
+    {
+      "page": 94,
+      "page_id": "fptu-handbook-2026:p094",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1917,
+      "normalized_chars": 1885
+    },
+    {
+      "page": 95,
+      "page_id": "fptu-handbook-2026:p095",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1248,
+      "normalized_chars": 1226
+    },
+    {
+      "page": 96,
+      "page_id": "fptu-handbook-2026:p096",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1888,
+      "normalized_chars": 1865
+    },
+    {
+      "page": 97,
+      "page_id": "fptu-handbook-2026:p097",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1613,
+      "normalized_chars": 1575
+    },
+    {
+      "page": 98,
+      "page_id": "fptu-handbook-2026:p098",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1305,
+      "normalized_chars": 1277
+    },
+    {
+      "page": 99,
+      "page_id": "fptu-handbook-2026:p099",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1392,
+      "normalized_chars": 1330
+    },
+    {
+      "page": 100,
+      "page_id": "fptu-handbook-2026:p100",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1427,
+      "normalized_chars": 1390
+    },
+    {
+      "page": 101,
+      "page_id": "fptu-handbook-2026:p101",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 831,
+      "normalized_chars": 817
+    },
+    {
+      "page": 102,
+      "page_id": "fptu-handbook-2026:p102",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1219,
+      "normalized_chars": 1163
+    },
+    {
+      "page": 103,
+      "page_id": "fptu-handbook-2026:p103",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1230,
+      "normalized_chars": 1208
+    },
+    {
+      "page": 104,
+      "page_id": "fptu-handbook-2026:p104",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 758,
+      "normalized_chars": 739
+    },
+    {
+      "page": 105,
+      "page_id": "fptu-handbook-2026:p105",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1114,
+      "normalized_chars": 1059
+    },
+    {
+      "page": 106,
+      "page_id": "fptu-handbook-2026:p106",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 518,
+      "normalized_chars": 508
+    },
+    {
+      "page": 107,
+      "page_id": "fptu-handbook-2026:p107",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1076,
+      "normalized_chars": 1071
+    },
+    {
+      "page": 108,
+      "page_id": "fptu-handbook-2026:p108",
+      "section": "08_nhung_dieu_can_biet",
+      "status": "valid_content",
+      "raw_chars": 1139,
+      "normalized_chars": 1111
+    },
+    {
+      "page": 109,
+      "page_id": "fptu-handbook-2026:p109",
+      "section": "09_cam_ket_trung_thuc",
+      "status": "excluded_section_divider",
+      "raw_chars": 68,
+      "normalized_chars": 68
+    },
+    {
+      "page": 110,
+      "page_id": "fptu-handbook-2026:p110",
+      "section": "09_cam_ket_trung_thuc",
+      "status": "valid_content",
+      "raw_chars": 1713,
+      "normalized_chars": 1594
+    },
+    {
+      "page": 111,
+      "page_id": "fptu-handbook-2026:p111",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    },
+    {
+      "page": 112,
+      "page_id": "fptu-handbook-2026:p112",
+      "section": "00_bia_va_muc_luc",
+      "status": "excluded_cover_or_blank_photo",
+      "raw_chars": 0,
+      "normalized_chars": 0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "A": {
+    "strategy": "A",
+    "parameters": {
+      "chunking": "fixed_size",
+      "chunk_size": 500,
+      "overlap": 50,
+      "metadata_fields": [
+        "document_id",
+        "source",
+        "page",
+        "section",
+        "document_type",
+        "language"
+      ],
+      "use_metadata_filter": false
+    },
+    "chunk_stats": {
+      "chunk_count": 263,
+      "total_chars": 109565,
+      "approx_tokens": 27391,
+      "min_len": 50,
+      "max_len": 500,
+      "mean_len": 416.6,
+      "median_len": 499
+    },
+    "ingest_time_seconds": 7.327,
+    "cost_usd": 0.0,
+    "stored_count_before_reingest": 263,
+    "stored_count_after_reingest": 263,
+    "idempotency_verified": true,
+    "query_time_seconds": 0.849
+  },
+  "B": {
+    "strategy": "B",
+    "parameters": {
+      "chunking": "by_paragraph",
+      "max_size": 850,
+      "overlap": 0,
+      "metadata_fields": [
+        "document_id",
+        "source",
+        "page",
+        "section",
+        "document_type",
+        "language"
+      ],
+      "use_metadata_filter": false
+    },
+    "chunk_stats": {
+      "chunk_count": 175,
+      "total_chars": 100912,
+      "approx_tokens": 25228,
+      "min_len": 2,
+      "max_len": 850,
+      "mean_len": 576.6,
+      "median_len": 630
+    },
+    "ingest_time_seconds": 5.122,
+    "cost_usd": 0.0,
+    "stored_count_before_reingest": 175,
+    "stored_count_after_reingest": 175,
+    "idempotency_verified": true,
+    "query_time_seconds": 0.83
+  },
+  "C": {
+    "strategy": "C",
+    "parameters": {
+      "chunking": "by_paragraph",
+      "max_size": 850,
+      "overlap": 0,
+      "metadata_fields": [
+        "document_id",
+        "source",
+        "page",
+        "section",
+        "document_type",
+        "language"
+      ],
+      "use_metadata_filter": true
+    },
+    "chunk_stats": {
+      "chunk_count": 175,
+      "total_chars": 100912,
+      "approx_tokens": 25228,
+      "min_len": 2,
+      "max_len": 850,
+      "mean_len": 576.6,
+      "median_len": 630
+    },
+    "ingest_time_seconds": 5.029,
+    "cost_usd": 0.0,
+    "stored_count_before_reingest": 175,
+    "stored_count_after_reingest": 175,
+    "idempotency_verified": true,
+    "query_time_seconds": 0.91
+  }
+}

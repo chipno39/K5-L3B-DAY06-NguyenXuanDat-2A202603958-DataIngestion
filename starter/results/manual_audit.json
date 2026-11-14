@@ -1,0 +1,1358 @@
+{
+  "evaluator_note": "Người chấm thủ công là tác giả bài lab (Nguyễn Xuân Đạt). Để giảm thiên lệch xác nhận (confirmation bias), 10 vị trí chấm Coherence được cố định trước theo thứ tự page_id tăng dần (p008..p018, lấy chunk đầu tiên c001), và thang điểm Grounding (0/1/2) chỉ đánh giá độ đủ của bằng chứng truy xuất trong Top-3 chứ không đánh giá câu trả lời sinh tự động.",
+  "coherence_summary": {
+    "A": {
+      "sample_size": 10,
+      "count_score_0": 3,
+      "count_score_1": 5,
+      "count_score_2": 2,
+      "total_points": 9,
+      "max_points": 20,
+      "mean_score_out_of_2": 0.9
+    },
+    "B": {
+      "sample_size": 10,
+      "count_score_0": 0,
+      "count_score_1": 3,
+      "count_score_2": 7,
+      "total_points": 17,
+      "max_points": 20,
+      "mean_score_out_of_2": 1.7
+    },
+    "C": {
+      "sample_size": 10,
+      "count_score_0": 0,
+      "count_score_1": 3,
+      "count_score_2": 7,
+      "total_points": 17,
+      "max_points": 20,
+      "mean_score_out_of_2": 1.7
+    }
+  },
+  "coherence_samples_10_positions": [
+    {
+      "position_id": "pos_01_p008",
+      "page_id": "fptu-handbook-2026:p008",
+      "page": 8,
+      "section": "01_gioi_thieu_chung",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p008:fixed:c001",
+        "char_len": 359,
+        "score": 2,
+        "reason": "Trang ngắn (359 ký tự), trọn vẹn trong 1 chunk, đầy đủ chủ ngữ và quyết định thành lập trường.",
+        "text_excerpt": "TRƯỜNG ĐẠI HỌC\nFPT\nTrường Đại học FPT thành lập ngày 08/09/2006 theo quyết định số\n208/2006/QĐ-TTG của Thủ tướng Chính phủ. Thời điểm đó, Đại học\nFPT là trường đại học đầu tiên của Việt Nam do một doanh nghiệp\nthành lập với 100% vốn đầu tư từ Công ty Cổ phần FPT - tập đoàn tiên\nphong trong lĩnh vực Công nghệ thông tin của Việt Nam.\nSỔ TAY TÂN SINH VIÊN | 08"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p008:para:c001",
+        "char_len": 359,
+        "score": 2,
+        "reason": "Giữ nguyên trọn vẹn đoạn giới thiệu lịch sử thành lập trường ĐH FPT (359 ký tự).",
+        "text_excerpt": "TRƯỜNG ĐẠI HỌC\nFPT\nTrường Đại học FPT thành lập ngày 08/09/2006 theo quyết định số\n208/2006/QĐ-TTG của Thủ tướng Chính phủ. Thời điểm đó, Đại học\nFPT là trường đại học đầu tiên của Việt Nam do một doanh nghiệp\nthành lập với 100% vốn đầu tư từ Công ty Cổ phần FPT - tập đoàn tiên\nphong trong lĩnh vực Công nghệ thông tin của Việt Nam.\nSỔ TAY TÂN SINH VIÊN | 08"
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p008:para:c001",
+        "char_len": 359,
+        "score": 2,
+        "reason": "Giống B: giữ trọn vẹn đoạn giới thiệu lịch sử thành lập trường ĐH FPT.",
+        "text_excerpt": "TRƯỜNG ĐẠI HỌC\nFPT\nTrường Đại học FPT thành lập ngày 08/09/2006 theo quyết định số\n208/2006/QĐ-TTG của Thủ tướng Chính phủ. Thời điểm đó, Đại học\nFPT là trường đại học đầu tiên của Việt Nam do một doanh nghiệp\nthành lập với 100% vốn đầu tư từ Công ty Cổ phần FPT - tập đoàn tiên\nphong trong lĩnh vực Công nghệ thông tin của Việt Nam.\nSỔ TAY TÂN SINH VIÊN | 08"
+      }
+    },
+    {
+      "position_id": "pos_02_p009",
+      "page_id": "fptu-handbook-2026:p009",
+      "page": 9,
+      "section": "01_gioi_thieu_chung",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p009:fixed:c001",
+        "char_len": 500,
+        "score": 1,
+        "reason": "Cắt ngang câu tại ký tự 500 ('...sinh viên thành thạo hai ngoại ngữ'), phần vị ngữ còn lại bị đẩy sang c002 bắt đầu bằng chữ cụt 'g nghệ quốc tế'.",
+        "text_excerpt": "Với tầm nhìn iGSM (Industry Relevant\n– Global – Smart Education – Mega),\nsứ mệnh của trường Đại học FPT là\ncung cấp năng lực cạnh tranh toàn\ncầu cho đông đảo người học, góp\nphần mở mang bờ cõi trí tuệ đất\nnước dựa trên chiến lược Đào tạo\ntốt, Trách nhiệm xã hội, Việc làm tốt,\nQuốc tế hóa tốt, Nghiên cứu tốt. Sự\nkhác biệt trong chương trình đào tạo\ncủa trường Đại học FPT là gắn kết\nchặt chẽ với các doanh nghiệp, đào\ntạo theo chương trình chuẩn công\nnghệ quốc tế, sinh viên thành thạo\nhai ngoại ngữ"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p009:para:c001",
+        "char_len": 814,
+        "score": 2,
+        "reason": "Giữ trọn cả 2 đoạn văn về tầm nhìn iGSM và sứ mệnh của trường trong 1 chunk (814 ký tự).",
+        "text_excerpt": "Với tầm nhìn iGSM (Industry Relevant\n– Global – Smart Education – Mega),\nsứ mệnh của trường Đại học FPT là\ncung cấp năng lực cạnh tranh toàn\ncầu cho đông đảo người học, góp\nphần mở mang bờ cõi trí tuệ đất\nnước dựa trên chiến lược Đào tạo\ntốt, Trách nhiệm xã hội, Việc làm tốt,\nQuốc tế hóa tốt, Nghiên cứu tốt. Sự\nkhác biệt trong chương trình đào tạo\ncủa trường Đại học FPT là gắn kết\nchặt chẽ với các doanh nghiệp, đào\ntạo theo chương trình chuẩn công\nnghệ quốc tế, sinh viên thành thạo\nhai ngoại ngữ, được rèn luyện kỹ\nnăng mềm, được chú trọng phát triển\ncon người toàn diện, hài hòa.\nSau quá trình hình thành và phát\ntriển, trường Đại học FPT ghi dấu ấn\ntrên bản đồ tri thức quốc gia và quốc\ntế, khẳng định vai trò và vị thế trong\nhành trình kiến tạo tương lai cho\nhàng nghìn sinh viên.\nSỔ TAY TÂN SINH VIÊN | 09"
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p009:para:c001",
+        "char_len": 814,
+        "score": 2,
+        "reason": "Giống B: giữ trọn cả 2 đoạn văn về tầm nhìn iGSM và sứ mệnh trong 1 chunk.",
+        "text_excerpt": "Với tầm nhìn iGSM (Industry Relevant\n– Global – Smart Education – Mega),\nsứ mệnh của trường Đại học FPT là\ncung cấp năng lực cạnh tranh toàn\ncầu cho đông đảo người học, góp\nphần mở mang bờ cõi trí tuệ đất\nnước dựa trên chiến lược Đào tạo\ntốt, Trách nhiệm xã hội, Việc làm tốt,\nQuốc tế hóa tốt, Nghiên cứu tốt. Sự\nkhác biệt trong chương trình đào tạo\ncủa trường Đại học FPT là gắn kết\nchặt chẽ với các doanh nghiệp, đào\ntạo theo chương trình chuẩn công\nnghệ quốc tế, sinh viên thành thạo\nhai ngoại ngữ, được rèn luyện kỹ\nnăng mềm, được chú trọng phát triển\ncon người toàn diện, hài hòa.\nSau quá trình hình thành và phát\ntriển, trường Đại học FPT ghi dấu ấn\ntrên bản đồ tri thức quốc gia và quốc\ntế, khẳng định vai trò và vị thế trong\nhành trình kiến tạo tương lai cho\nhàng nghìn sinh viên.\nSỔ TAY TÂN SINH VIÊN | 09"
+      }
+    },
+    {
+      "position_id": "pos_03_p010",
+      "page_id": "fptu-handbook-2026:p010",
+      "page": 10,
+      "section": "01_gioi_thieu_chung",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p010:fixed:c001",
+        "char_len": 500,
+        "score": 0,
+        "reason": "Cắt cụt giữa tên riêng ở cuối chunk ('...từ bà M' thay vì 'bà Mei Mei Lim') và bị xen ngang bởi chú thích ảnh do bố cục PDF 2 cột.",
+        "text_excerpt": "Trường Đại học FPT (FPTU) chính thức\nđược Times Higher Education (THE)\nxếp vào nhóm 201–300 trường đại học\ncó tác động phát triển bền vững hàng\nđầu thế giới trong bảng xếp hạng THE\nSustainability Impact Ratings 2026.\nĐây là bảng xếp hạng toàn cầu đánh\ngiá tác động thúc đẩy 17 Mục tiêu Phát\ntriển Bền vững (SDGs) của Liên Hợp\nQuốc. Khác với các bảng xếp hạng\ntập trung chủ yếu vào nghiên cứu hay\nTS. Lê Trường Tùng – Chủ tịch Hội đồng trường Trường Đại học FPT\nnhận vinh danh xếp hạng Top 300 từ bà M"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p010:para:c001",
+        "char_len": 572,
+        "score": 1,
+        "reason": "Ngắt đúng dấu chấm câu ('...châu Á Thái Bình Dương APAC.'), không cắt tên riêng, nhưng bố cục PDF 2 cột làm chú thích ảnh chen giữa cụm 'nghiên cứu hay' và 'học thuật'.",
+        "text_excerpt": "Trường Đại học FPT (FPTU) chính thức\nđược Times Higher Education (THE)\nxếp vào nhóm 201–300 trường đại học\ncó tác động phát triển bền vững hàng\nđầu thế giới trong bảng xếp hạng THE\nSustainability Impact Ratings 2026.\nĐây là bảng xếp hạng toàn cầu đánh\ngiá tác động thúc đẩy 17 Mục tiêu Phát\ntriển Bền vững (SDGs) của Liên Hợp\nQuốc. Khác với các bảng xếp hạng\ntập trung chủ yếu vào nghiên cứu hay\nTS. Lê Trường Tùng – Chủ tịch Hội đồng trường Trường Đại học FPT\nnhận vinh danh xếp hạng Top 300 từ bà Mei Mei Lim,\nChủ tịch Times Higher Education châu Á Thái Bình Dương APAC."
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p010:para:c001",
+        "char_len": 572,
+        "score": 1,
+        "reason": "Giống B: ngắt đúng hết câu nhưng bị ảnh hưởng bởi thứ tự đọc 2 cột của PDF.",
+        "text_excerpt": "Trường Đại học FPT (FPTU) chính thức\nđược Times Higher Education (THE)\nxếp vào nhóm 201–300 trường đại học\ncó tác động phát triển bền vững hàng\nđầu thế giới trong bảng xếp hạng THE\nSustainability Impact Ratings 2026.\nĐây là bảng xếp hạng toàn cầu đánh\ngiá tác động thúc đẩy 17 Mục tiêu Phát\ntriển Bền vững (SDGs) của Liên Hợp\nQuốc. Khác với các bảng xếp hạng\ntập trung chủ yếu vào nghiên cứu hay\nTS. Lê Trường Tùng – Chủ tịch Hội đồng trường Trường Đại học FPT\nnhận vinh danh xếp hạng Top 300 từ bà Mei Mei Lim,\nChủ tịch Times Higher Education châu Á Thái Bình Dương APAC."
+      }
+    },
+    {
+      "position_id": "pos_04_p011",
+      "page_id": "fptu-handbook-2026:p011",
+      "page": 11,
+      "section": "01_gioi_thieu_chung",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p011:fixed:c001",
+        "char_len": 499,
+        "score": 1,
+        "reason": "Cắt ngay sau chữ 'FPTU' ở cuối c001, làm tách rời tiêu đề hạng mục SDG4 khỏi kết quả 'được xếp hạng 87 thế giới' ở c002.",
+        "text_excerpt": "TS. Lê Trường Tùng (đứng giữa) – Chủ tịch Hội đồng trường,\nTS. Nguyễn Khắc Thành (thứ 3 từ trái sang) – Hiệu trưởng, TS. Trần Ngọc Tuấn (thứ 3 từ phải sang)\n– Hiệu phó Trường Đại học FPT và cán bộ trường tại sự kiện công bố\nthứ hạng THE Sustainability Impact Ratings 2026 tại Jakarta, Indonesia.\nĐáng chú ý, ở hạng mục Giáo dục\nchất lượng (SDG4)\nĐây là hạng mục phản ánh trực tiếp\nchất lượng đào tạo, khả năng tiếp cận\ngiáo dục và những đóng góp của đại\nhọc đối với sự phát triển của người học.\nFPTU"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p011:para:c001",
+        "char_len": 764,
+        "score": 2,
+        "reason": "Gom trọn vẹn tiêu đề SDG4, thứ hạng 87 thế giới và toàn bộ đoạn giải thích ý nghĩa vào c001 (764 ký tự).",
+        "text_excerpt": "TS. Lê Trường Tùng (đứng giữa) – Chủ tịch Hội đồng trường,\nTS. Nguyễn Khắc Thành (thứ 3 từ trái sang) – Hiệu trưởng, TS. Trần Ngọc Tuấn (thứ 3 từ phải sang)\n– Hiệu phó Trường Đại học FPT và cán bộ trường tại sự kiện công bố\nthứ hạng THE Sustainability Impact Ratings 2026 tại Jakarta, Indonesia.\nĐáng chú ý, ở hạng mục Giáo dục\nchất lượng (SDG4)\nĐây là hạng mục phản ánh trực tiếp\nchất lượng đào tạo, khả năng tiếp cận\ngiáo dục và những đóng góp của đại\nhọc đối với sự phát triển của người học.\nFPTU được xếp hạng\n87 thế giới\nthuộc top 100 toàn cầu\n& đứng đầu Việt Nam\nKết quả này đưa FPTU vào nhóm các\ncơ sở giáo dục có ảnh hưởng nổi bật\nnhất thế giới trong giáo dục hòa nhập,\ntạo ra cơ hội học tập cho mọi người,\nphát triển năng lực và thúc đẩy học\ntập suốt đời."
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p011:para:c001",
+        "char_len": 764,
+        "score": 2,
+        "reason": "Giống B: gom trọn tiêu đề SDG4, thứ hạng 87 thế giới và đoạn giải thích vào c001.",
+        "text_excerpt": "TS. Lê Trường Tùng (đứng giữa) – Chủ tịch Hội đồng trường,\nTS. Nguyễn Khắc Thành (thứ 3 từ trái sang) – Hiệu trưởng, TS. Trần Ngọc Tuấn (thứ 3 từ phải sang)\n– Hiệu phó Trường Đại học FPT và cán bộ trường tại sự kiện công bố\nthứ hạng THE Sustainability Impact Ratings 2026 tại Jakarta, Indonesia.\nĐáng chú ý, ở hạng mục Giáo dục\nchất lượng (SDG4)\nĐây là hạng mục phản ánh trực tiếp\nchất lượng đào tạo, khả năng tiếp cận\ngiáo dục và những đóng góp của đại\nhọc đối với sự phát triển của người học.\nFPTU được xếp hạng\n87 thế giới\nthuộc top 100 toàn cầu\n& đứng đầu Việt Nam\nKết quả này đưa FPTU vào nhóm các\ncơ sở giáo dục có ảnh hưởng nổi bật\nnhất thế giới trong giáo dục hòa nhập,\ntạo ra cơ hội học tập cho mọi người,\nphát triển năng lực và thúc đẩy học\ntập suốt đời."
+      }
+    },
+    {
+      "position_id": "pos_05_p012",
+      "page_id": "fptu-handbook-2026:p012",
+      "page": 12,
+      "section": "01_gioi_thieu_chung",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p012:fixed:c001",
+        "char_len": 398,
+        "score": 2,
+        "reason": "Trang danh sách Ban Giám hiệu ngắn (398 ký tự), giữ nguyên trong 1 chunk đầy đủ.",
+        "text_excerpt": "BAN GIÁM HIỆU\ntrường ĐẠI HỌC FPT\nTS. LÊ TRƯỜNG TÙNG\nTS. NGUYỄN KHẮC THÀNH\nChủ tịch Hội đồng quản trị\nTrường Đại học FPT\nHiệu trưởng trường Đại học FPT\nTS. TRẦN NGỌC TUẤN TS. NGUYỄN XUÂN PHONG TS. NGUYỄN KIM ÁNH\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nTS. NGUYỄN VIỆT THẮNG\nPhó Hiệu trưởng\ntrường Đại học FPT\nSỔ TAY TÂN SINH VIÊN | 12"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p012:para:c001",
+        "char_len": 398,
+        "score": 2,
+        "reason": "Giữ nguyên toàn bộ thông tin Ban Giám hiệu trong 1 chunk (398 ký tự).",
+        "text_excerpt": "BAN GIÁM HIỆU\ntrường ĐẠI HỌC FPT\nTS. LÊ TRƯỜNG TÙNG\nTS. NGUYỄN KHẮC THÀNH\nChủ tịch Hội đồng quản trị\nTrường Đại học FPT\nHiệu trưởng trường Đại học FPT\nTS. TRẦN NGỌC TUẤN TS. NGUYỄN XUÂN PHONG TS. NGUYỄN KIM ÁNH\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nTS. NGUYỄN VIỆT THẮNG\nPhó Hiệu trưởng\ntrường Đại học FPT\nSỔ TAY TÂN SINH VIÊN | 12"
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p012:para:c001",
+        "char_len": 398,
+        "score": 2,
+        "reason": "Giống B: giữ nguyên toàn bộ thông tin Ban Giám hiệu trong 1 chunk.",
+        "text_excerpt": "BAN GIÁM HIỆU\ntrường ĐẠI HỌC FPT\nTS. LÊ TRƯỜNG TÙNG\nTS. NGUYỄN KHẮC THÀNH\nChủ tịch Hội đồng quản trị\nTrường Đại học FPT\nHiệu trưởng trường Đại học FPT\nTS. TRẦN NGỌC TUẤN TS. NGUYỄN XUÂN PHONG TS. NGUYỄN KIM ÁNH\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nPhó Hiệu trưởng\ntrường Đại học FPT\nTS. NGUYỄN VIỆT THẮNG\nPhó Hiệu trưởng\ntrường Đại học FPT\nSỔ TAY TÂN SINH VIÊN | 12"
+      }
+    },
+    {
+      "position_id": "pos_06_p014",
+      "page_id": "fptu-handbook-2026:p014",
+      "page": 14,
+      "section": "02_noi_quy_sinh_vien",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p014:fixed:c001",
+        "char_len": 500,
+        "score": 1,
+        "reason": "Cắt ngang câu ở cuối c001 ('Sinh viên quên, làm mất thẻ s'), mất phần xử lý 'sẽ phải làm thẻ tạm thời tại quầy dịch vụ sinh viên'.",
+        "text_excerpt": "NỘI QUY SINH VIÊN\nTRƯỜNG ĐẠI HỌC FPT\n(Ban hành kèm theo Quyết định số 545/QĐ-ĐHFPT ngày\n14/05/2025 của Hiệu trưởng Trường Đại học FPT)\nNHỮNG QUY\nĐỊNH CHUNG\n01\n02\n01\nĐiểm danh\nPhạm vi điều chỉnh\nvà đối tượng áp dụng\nSinh viên vào lớp muộn quá 5 phút\nsẽ bị tính là vắng mặt ở slot đó.\nSinh viên không được nghỉ quá số\nbuổi học/thời gian quy định trong\nQuy chế đào tạo.\n•\n•\n03Thẻ sinh viên\nSinh viên phải xuất trình thẻ tại các\nkhu vực theo yêu cầu quy định của\nNhà trường.\nSinh viên quên, làm mất thẻ s"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p014:para:c001",
+        "char_len": 547,
+        "score": 2,
+        "reason": "Giữ trọn vẹn các mục 01 (Phạm vi), 02 (Điểm danh) và 03 (Thẻ sinh viên) không cắt ngang câu (547 ký tự).",
+        "text_excerpt": "NỘI QUY SINH VIÊN\nTRƯỜNG ĐẠI HỌC FPT\n(Ban hành kèm theo Quyết định số 545/QĐ-ĐHFPT ngày\n14/05/2025 của Hiệu trưởng Trường Đại học FPT)\nNHỮNG QUY\nĐỊNH CHUNG\n01\n02\n01\nĐiểm danh\nPhạm vi điều chỉnh\nvà đối tượng áp dụng\nSinh viên vào lớp muộn quá 5 phút\nsẽ bị tính là vắng mặt ở slot đó.\nSinh viên không được nghỉ quá số\nbuổi học/thời gian quy định trong\nQuy chế đào tạo.\n03Thẻ sinh viên\nSinh viên phải xuất trình thẻ tại các\nkhu vực theo yêu cầu quy định của\nNhà trường.\nSinh viên quên, làm mất thẻ sẽ phải\nlàm thẻ tạm thời tại quầy dịch vụ\nsinh viên."
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p014:para:c001",
+        "char_len": 547,
+        "score": 2,
+        "reason": "Giống B: giữ trọn vẹn các mục 01, 02, 03 không cắt ngang câu.",
+        "text_excerpt": "NỘI QUY SINH VIÊN\nTRƯỜNG ĐẠI HỌC FPT\n(Ban hành kèm theo Quyết định số 545/QĐ-ĐHFPT ngày\n14/05/2025 của Hiệu trưởng Trường Đại học FPT)\nNHỮNG QUY\nĐỊNH CHUNG\n01\n02\n01\nĐiểm danh\nPhạm vi điều chỉnh\nvà đối tượng áp dụng\nSinh viên vào lớp muộn quá 5 phút\nsẽ bị tính là vắng mặt ở slot đó.\nSinh viên không được nghỉ quá số\nbuổi học/thời gian quy định trong\nQuy chế đào tạo.\n03Thẻ sinh viên\nSinh viên phải xuất trình thẻ tại các\nkhu vực theo yêu cầu quy định của\nNhà trường.\nSinh viên quên, làm mất thẻ sẽ phải\nlàm thẻ tạm thời tại quầy dịch vụ\nsinh viên."
+      }
+    },
+    {
+      "position_id": "pos_07_p015",
+      "page_id": "fptu-handbook-2026:p015",
+      "page": 15,
+      "section": "02_noi_quy_sinh_vien",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p015:fixed:c001",
+        "char_len": 500,
+        "score": 1,
+        "reason": "Cắt ngang câu tại ký tự 500 ('Sinh viên cần có ý thức bảo vệ và giữ gìn tài sản'), thiếu cụm 'của Nhà trường.'.",
+        "text_excerpt": "04Quy tắc & văn hóa ứng xử\nSinh viên khi đến trường cần có phục trang phù hợp với môi trường giáo\ndục, không phản cảm và gây ảnh hưởng đến người khác.\nSinh viên cần tôn trọng và cư xử có văn hóa với thầy cô, cán bộ Nhà trường,\nkhách đến trường và các sinh viên khác.\nNghiêm cấm trao đổi, truyền bá thông tin xấu, trái với luật pháp nước\nCHXHCN Việt Nam và thuần phong mỹ tục của dân tộc dưới mọi hình thức.\n•\n•\n•\n05môi trường học tập\nGiữ gìn & bảo vệ\nSinh viên cần có ý thức bảo vệ và giữ gìn tài sản"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p015:para:c001",
+        "char_len": 659,
+        "score": 2,
+        "reason": "Gom trọn mục 04 (Quy tắc ứng xử) và 2 ý đầu của mục 05 (Giữ gìn môi trường học tập), kết thúc đúng dấu chấm câu (659 ký tự).",
+        "text_excerpt": "04Quy tắc & văn hóa ứng xử\nSinh viên khi đến trường cần có phục trang phù hợp với môi trường giáo\ndục, không phản cảm và gây ảnh hưởng đến người khác.\nSinh viên cần tôn trọng và cư xử có văn hóa với thầy cô, cán bộ Nhà trường,\nkhách đến trường và các sinh viên khác.\nNghiêm cấm trao đổi, truyền bá thông tin xấu, trái với luật pháp nước\nCHXHCN Việt Nam và thuần phong mỹ tục của dân tộc dưới mọi hình thức.\n05môi trường học tập\nGiữ gìn & bảo vệ\nSinh viên cần có ý thức bảo vệ và giữ gìn tài sản của Nhà trường.\nSinh viên làm thiệt hại đến tài sản của Nhà trường hoặc tài sản của cá nhân\nkhác sẽ phải chịu hoàn toàn trách nhiệm đền bù thiệt hại do mình gây ra."
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p015:para:c001",
+        "char_len": 659,
+        "score": 2,
+        "reason": "Giống B: kết thúc đúng ranh giới câu hoàn chỉnh (659 ký tự).",
+        "text_excerpt": "04Quy tắc & văn hóa ứng xử\nSinh viên khi đến trường cần có phục trang phù hợp với môi trường giáo\ndục, không phản cảm và gây ảnh hưởng đến người khác.\nSinh viên cần tôn trọng và cư xử có văn hóa với thầy cô, cán bộ Nhà trường,\nkhách đến trường và các sinh viên khác.\nNghiêm cấm trao đổi, truyền bá thông tin xấu, trái với luật pháp nước\nCHXHCN Việt Nam và thuần phong mỹ tục của dân tộc dưới mọi hình thức.\n05môi trường học tập\nGiữ gìn & bảo vệ\nSinh viên cần có ý thức bảo vệ và giữ gìn tài sản của Nhà trường.\nSinh viên làm thiệt hại đến tài sản của Nhà trường hoặc tài sản của cá nhân\nkhác sẽ phải chịu hoàn toàn trách nhiệm đền bù thiệt hại do mình gây ra."
+      }
+    },
+    {
+      "position_id": "pos_08_p016",
+      "page_id": "fptu-handbook-2026:p016",
+      "page": 16,
+      "section": "02_noi_quy_sinh_vien",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p016:fixed:c001",
+        "char_len": 500,
+        "score": 0,
+        "reason": "Cắt đứt đôi từ 'Quy' trong 'Nội quy ký túc xá: Quy[ết định số 613/QĐ-ĐHFPT]', làm mất số hiệu quyết định ở c001.",
+        "text_excerpt": "VI PHẠM & KHUNG\nXỬ LÝ KỶ LUẬT\n04\nTrong học tập\nNỘI DUNG\nVI PHẠM\nHÌNH THỨC\nKỶ LUẬT GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Đến muộn giờ học quá 5\nphút; Mất trật tự, làm việc\nriêng trong giờ học; Không\ntuân thủ các yêu cầu của\ngiảng viên trong giờ học.\nKhông được điểm danh cho\ngiờ học đó.\nCÁC QUY ĐỊNH KHÁC03\nNội quy kỳ thi: Quyết định số 1234/QĐ-ĐHFPT ban hành ngày 07/11/2024.\nNội quy thư viện: Quyết định số 002/2007/QĐ-FU ban hành ngày 21/03/2007.\nNội quy ký túc xá: Quy"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p016:para:c001",
+        "char_len": 740,
+        "score": 2,
+        "reason": "Giữ trọn vẹn toàn bộ danh sách các Quyết định ở mục 03 (Các quy định khác) và mục 04 (Khung kỷ luật mục 1) trong c001 (740 ký tự).",
+        "text_excerpt": "VI PHẠM & KHUNG\nXỬ LÝ KỶ LUẬT\n04\nTrong học tập\nNỘI DUNG\nVI PHẠM\nHÌNH THỨC\nKỶ LUẬT GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Đến muộn giờ học quá 5\nphút; Mất trật tự, làm việc\nriêng trong giờ học; Không\ntuân thủ các yêu cầu của\ngiảng viên trong giờ học.\nKhông được điểm danh cho\ngiờ học đó.\nCÁC QUY ĐỊNH KHÁC03\nNội quy kỳ thi: Quyết định số 1234/QĐ-ĐHFPT ban hành ngày 07/11/2024.\nNội quy thư viện: Quyết định số 002/2007/QĐ-FU ban hành ngày 21/03/2007.\nNội quy ký túc xá: Quyết định số 613/QĐ-ĐHFPT ban hành ngày 01/08/2016.\nQuy định tài chính:\nQuyết định số 188/QĐ-CTGDFPT ban hành ngày 15/07/2026.\nQuyết định số 161/QĐ-CTGDFPT ban hành ngày 10/06/2026.\nCác quy định liên quan khác của Trường Đại học FPT.\n04\n06 07"
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p016:para:c001",
+        "char_len": 740,
+        "score": 2,
+        "reason": "Giống B: giữ trọn danh sách các Quyết định ở mục 03 và mục 04 trong c001.",
+        "text_excerpt": "VI PHẠM & KHUNG\nXỬ LÝ KỶ LUẬT\n04\nTrong học tập\nNỘI DUNG\nVI PHẠM\nHÌNH THỨC\nKỶ LUẬT GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Đến muộn giờ học quá 5\nphút; Mất trật tự, làm việc\nriêng trong giờ học; Không\ntuân thủ các yêu cầu của\ngiảng viên trong giờ học.\nKhông được điểm danh cho\ngiờ học đó.\nCÁC QUY ĐỊNH KHÁC03\nNội quy kỳ thi: Quyết định số 1234/QĐ-ĐHFPT ban hành ngày 07/11/2024.\nNội quy thư viện: Quyết định số 002/2007/QĐ-FU ban hành ngày 21/03/2007.\nNội quy ký túc xá: Quyết định số 613/QĐ-ĐHFPT ban hành ngày 01/08/2016.\nQuy định tài chính:\nQuyết định số 188/QĐ-CTGDFPT ban hành ngày 15/07/2026.\nQuyết định số 161/QĐ-CTGDFPT ban hành ngày 10/06/2026.\nCác quy định liên quan khác của Trường Đại học FPT.\n04\n06 07"
+      }
+    },
+    {
+      "position_id": "pos_09_p017",
+      "page_id": "fptu-handbook-2026:p017",
+      "page": 17,
+      "section": "02_noi_quy_sinh_vien",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p017:fixed:c001",
+        "char_len": 499,
+        "score": 0,
+        "reason": "Cắt ngang khung hình thức xử lý kỷ luật ('...xử lý từ khiển trách đến buộc'), mất chữ 'thôi học và phải bồi thường 100% thiệt hại'; đồng thời bảng PDF bị tách cột.",
+        "text_excerpt": "3. Học thay hoặc nhờ người\nkhác học thay.\n2. Vô lễ với thầy, cô giáo và\ncán bộ, nhân viên của trường.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTrong sinh hoạt và các hoạt động xã hội\nLần 1\nLần 1\nLần 2\nLần 2\nLần 3\nLần 3\nLần 4\nLần 4\n1. Làm hư hỏng, thiệt hại tài\nsản của Nhà trường.\n5. Tàng trữ, buôn bán, sử dụng\nđồ uống có cồn, thuốc lá, thuốc\nlào trong khuôn viên trường.\nTùy theo mức độ hư hại, xử\nlý từ khiển trách đến buộc"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p017:para:c001",
+        "char_len": 805,
+        "score": 1,
+        "reason": "Ngắt đúng dấu chấm câu cuối quy định ('...xử lý theo quy định của pháp luật.'), không cắt từ, nhưng do cấu trúc bảng nhiều cột trong PDF nên nội dung vi phạm và mức phạt chưa ghép sát từng dòng.",
+        "text_excerpt": "3. Học thay hoặc nhờ người\nkhác học thay.\n2. Vô lễ với thầy, cô giáo và\ncán bộ, nhân viên của trường.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTrong sinh hoạt và các hoạt động xã hội\nLần 1\nLần 1\nLần 2\nLần 2\nLần 3\nLần 3\nLần 4\nLần 4\n1. Làm hư hỏng, thiệt hại tài\nsản của Nhà trường.\n5. Tàng trữ, buôn bán, sử dụng\nđồ uống có cồn, thuốc lá, thuốc\nlào trong khuôn viên trường.\nTùy theo mức độ hư hại, xử\nlý từ khiển trách đến buộc thôi\nhọc và phải bồi thường 100%\nthiệt hại.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTùy theo mức độ, Nhà\ntrường xem xét nhắc nhở, phê\nbình hoặc xử lý kỷ luật từ khiển\ntrách đến buộc thôi học.\nNếu có dấu hiệu vi phạm\npháp luật, giao cho cơ quan\nchức năng xử lý theo quy định\ncủa pháp luật."
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p017:para:c001",
+        "char_len": 805,
+        "score": 1,
+        "reason": "Giống B: không cắt ngang câu nhưng bị hạn chế bởi thứ tự dòng của bảng PDF.",
+        "text_excerpt": "3. Học thay hoặc nhờ người\nkhác học thay.\n2. Vô lễ với thầy, cô giáo và\ncán bộ, nhân viên của trường.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTrong sinh hoạt và các hoạt động xã hội\nLần 1\nLần 1\nLần 2\nLần 2\nLần 3\nLần 3\nLần 4\nLần 4\n1. Làm hư hỏng, thiệt hại tài\nsản của Nhà trường.\n5. Tàng trữ, buôn bán, sử dụng\nđồ uống có cồn, thuốc lá, thuốc\nlào trong khuôn viên trường.\nTùy theo mức độ hư hại, xử\nlý từ khiển trách đến buộc thôi\nhọc và phải bồi thường 100%\nthiệt hại.\nTùy theo mức độ, xử lý từ\nkhiển trách đến buộc thôi học.\nTùy theo mức độ, Nhà\ntrường xem xét nhắc nhở, phê\nbình hoặc xử lý kỷ luật từ khiển\ntrách đến buộc thôi học.\nNếu có dấu hiệu vi phạm\npháp luật, giao cho cơ quan\nchức năng xử lý theo quy định\ncủa pháp luật."
+      }
+    },
+    {
+      "position_id": "pos_10_p018",
+      "page_id": "fptu-handbook-2026:p018",
+      "page": 18,
+      "section": "02_noi_quy_sinh_vien",
+      "selection_rule": "10 page_id nội dung hợp lệ đầu tiên theo thứ tự tăng dần (trang 8..18, bỏ qua trang bìa chương 13), xét chunk đầu tiên (c001) bao phủ đầu trang.",
+      "strategy_A": {
+        "chunk_id": "fptu-handbook-2026:p018:fixed:c001",
+        "char_len": 500,
+        "score": 1,
+        "reason": "Cắt ngang cụm từ ở cuối c001 ('Ngừng cung' thay vì 'Ngừng cung cấp dịch vụ.').",
+        "text_excerpt": "Xử lý vi phạm đeo thẻ sinh viên\nNỘI DUNG\nVI PHẠM GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Quên thẻ sinh viên\n3. Sinh viên không xuất trình\nthẻ tại các khu vực yêu cầu\nxuất trình thẻ sinh viên theo\nquy định của Nhà trường.\n4. Dùng thẻ sinh viên của người\nkhác (xử lý cả hai sinh viên)\n5. Làm giả thẻ sinh viên (chính\nhoặc tạm thời)\n2. Mất thẻ sinh viên\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nNgừng cung"
+      },
+      "strategy_B": {
+        "chunk_id": "fptu-handbook-2026:p018:para:c001",
+        "char_len": 593,
+        "score": 1,
+        "reason": "Giữ trọn toàn trang 18 (593 ký tự) không bị cắt chữ, nhưng các nhãn cột 'Lần 1, Lần 2' của bảng PDF nằm tách rời ở cuối trang.",
+        "text_excerpt": "Xử lý vi phạm đeo thẻ sinh viên\nNỘI DUNG\nVI PHẠM GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Quên thẻ sinh viên\n3. Sinh viên không xuất trình\nthẻ tại các khu vực yêu cầu\nxuất trình thẻ sinh viên theo\nquy định của Nhà trường.\n4. Dùng thẻ sinh viên của người\nkhác (xử lý cả hai sinh viên)\n5. Làm giả thẻ sinh viên (chính\nhoặc tạm thời)\n2. Mất thẻ sinh viên\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nNgừng cung cấp dịch vụ.\nLần 1 Lần 2 Lần 3\nLần 1\nLần 4\nLần 2\nHÌNH THỨC\nKỶ LUẬT\nSỔ TAY TÂN SINH VIÊN | 18"
+      },
+      "strategy_C": {
+        "chunk_id": "fptu-handbook-2026:p018:para:c001",
+        "char_len": 593,
+        "score": 1,
+        "reason": "Giống B: giữ trọn toàn trang 18, không cắt từ nhưng cấu trúc bảng PDF tách nhãn cột.",
+        "text_excerpt": "Xử lý vi phạm đeo thẻ sinh viên\nNỘI DUNG\nVI PHẠM GHI CHÚ\nKhiển\ntrách\nCảnh\ncáo\nĐình\nchỉ có\nthời\nhạn\nBuộc\nthôi\nhọc\n1. Quên thẻ sinh viên\n3. Sinh viên không xuất trình\nthẻ tại các khu vực yêu cầu\nxuất trình thẻ sinh viên theo\nquy định của Nhà trường.\n4. Dùng thẻ sinh viên của người\nkhác (xử lý cả hai sinh viên)\n5. Làm giả thẻ sinh viên (chính\nhoặc tạm thời)\n2. Mất thẻ sinh viên\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nCấp thẻ tạm thời, tiền cấp\nthẻ theo quy định tài chính.\nNgừng cung cấp dịch vụ.\nLần 1 Lần 2 Lần 3\nLần 1\nLần 4\nLần 2\nHÌNH THỨC\nKỶ LUẬT\nSỔ TAY TÂN SINH VIÊN | 18"
+      }
+    }
+  ],
+  "metadata_usefulness_summary": {
+    "A": {
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_compliance_fraction": "2/2"
+    },
+    "B": {
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_compliance_fraction": "1/2"
+    },
+    "C": {
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_compliance_fraction": "2/2"
+    }
+  },
+  "metadata_usefulness_test_records": {
+    "A": {
+      "checked_records_count": 15,
+      "accurate_metadata_count": 15,
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_questions_count": 2,
+      "test_filter_compliant_questions_count": 2,
+      "test_filter_compliance_fraction": "2/2",
+      "records": [
+        {
+          "question_id": "q16",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p030:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 30,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p029:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 29,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p026:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 26,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q17",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p038:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 38,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p039:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 39,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p039:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 39,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p065:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 65,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p065:fixed:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 65,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p064:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 64,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q19",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p075:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 75,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p072:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 72,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p075:fixed:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 75,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p108:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p108:fixed:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p104:fixed:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 104,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        }
+      ]
+    },
+    "B": {
+      "checked_records_count": 15,
+      "accurate_metadata_count": 15,
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_questions_count": 2,
+      "test_filter_compliant_questions_count": 1,
+      "test_filter_compliance_fraction": "1/2",
+      "records": [
+        {
+          "question_id": "q16",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p030:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 30,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p026:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 26,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p029:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 29,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q17",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p038:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 38,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p039:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 39,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p018:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 18,
+          "section": "02_noi_quy_sinh_vien",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": false
+        },
+        {
+          "question_id": "q18",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p065:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 65,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p064:para:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 64,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p063:para:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 63,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q19",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p075:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 75,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p072:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 72,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p074:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 74,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p108:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p108:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p104:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 104,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        }
+      ]
+    },
+    "C": {
+      "checked_records_count": 15,
+      "accurate_metadata_count": 15,
+      "accurate_metadata_fraction": "15/15",
+      "test_filter_questions_count": 2,
+      "test_filter_compliant_questions_count": 2,
+      "test_filter_compliance_fraction": "2/2",
+      "records": [
+        {
+          "question_id": "q16",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p030:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 30,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p026:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 26,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q16",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p029:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 29,
+          "section": "03_quy_che_dao_tao",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q17",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p038:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 38,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p039:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 39,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q17",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p034:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 34,
+          "section": "04_tai_chinh_hoc_phi",
+          "required_filter": {
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p065:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 65,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p064:para:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 64,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q18",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p063:para:c003",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 63,
+          "section": "06_thu_vien",
+          "required_filter": {
+            "section": "06_thu_vien"
+          },
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": true
+        },
+        {
+          "question_id": "q19",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p075:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 75,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p072:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 72,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q19",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p074:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 74,
+          "section": "07_cntt_it_support",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 1,
+          "chunk_id": "fptu-handbook-2026:p108:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 2,
+          "chunk_id": "fptu-handbook-2026:p108:para:c002",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 108,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        },
+        {
+          "question_id": "q20",
+          "rank": 3,
+          "chunk_id": "fptu-handbook-2026:p104:para:c001",
+          "document_id": "fptu-handbook-2026",
+          "source": "data/2026_So-tay-TSV_compressed.pdf",
+          "page": 104,
+          "section": "08_nhung_dieu_can_biet",
+          "required_filter": null,
+          "metadata_complete_and_accurate": true,
+          "matches_question_filter": null
+        }
+      ]
+    }
+  },
+  "grounding_summary": {
+    "A": {
+      "sample_size": 5,
+      "count_score_0": 0,
+      "count_score_1": 0,
+      "count_score_2": 5,
+      "distribution_0_1_2": "0/0/5",
+      "mean_score_out_of_2": 2.0
+    },
+    "B": {
+      "sample_size": 5,
+      "count_score_0": 0,
+      "count_score_1": 2,
+      "count_score_2": 3,
+      "distribution_0_1_2": "0/2/3",
+      "mean_score_out_of_2": 1.6
+    },
+    "C": {
+      "sample_size": 5,
+      "count_score_0": 0,
+      "count_score_1": 2,
+      "count_score_2": 3,
+      "distribution_0_1_2": "0/2/3",
+      "mean_score_out_of_2": 1.6
+    }
+  },
+  "grounding_test_samples": [
+    {
+      "question_id": "q16",
+      "question": "Sinh viên đã qua môn (pass môn) sau kỳ thi Final muốn đăng ký thi Cải thiện điểm thì phải nộp đơn trong thời hạn nào, có phải đóng phí không và điểm số được tính ra sao?",
+      "gold_page": 30,
+      "question_filter": null,
+      "strategy_A": {
+        "score": 2,
+        "reason": "Top-1 (p030:fixed:c001) chứa trọn vẹn cả 3 ý: thời hạn nộp đơn trước 12h trưa ngày thi Retake, làm đơn trên FAP không đóng phí, và hủy điểm Final lấy điểm Cải thiện làm kết quả cuối cùng.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p030:fixed:c001",
+            "page": 30,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p029:fixed:c002",
+            "page": 29,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p026:fixed:c001",
+            "page": 26,
+            "section": "03_quy_che_dao_tao"
+          }
+        ]
+      },
+      "strategy_B": {
+        "score": 2,
+        "reason": "Top-1 (p030:para:c001) chứa đầy đủ toàn bộ quy định thi Cải thiện điểm và truy vết đúng trang 30.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p030:para:c001",
+            "page": 30,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p026:para:c001",
+            "page": 26,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p029:para:c001",
+            "page": 29,
+            "section": "03_quy_che_dao_tao"
+          }
+        ]
+      },
+      "strategy_C": {
+        "score": 2,
+        "reason": "Top-1 (p030:para:c001) chứa đầy đủ toàn bộ quy định thi Cải thiện điểm và truy vết đúng trang 30.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p030:para:c001",
+            "page": 30,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p026:para:c001",
+            "page": 26,
+            "section": "03_quy_che_dao_tao"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p029:para:c001",
+            "page": 29,
+            "section": "03_quy_che_dao_tao"
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q17",
+      "question": "Hình thức thanh toán trả góp học phí bằng thẻ tín dụng qua FPT Pay chỉ áp dụng cho khoản thanh toán có giá trị tối thiểu từ bao nhiêu tiền trở lên?",
+      "gold_page": 39,
+      "question_filter": {
+        "section": "04_tai_chinh_hoc_phi"
+      },
+      "strategy_A": {
+        "score": 2,
+        "reason": "Rank 1 (trang 38) nêu quy trình trả góp qua FPT Pay và Rank 2-3 (trang 39) nêu rõ điều kiện 'chỉ áp dụng cho các khoản thanh toán từ 3.000.000đ trở lên'.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p038:fixed:c002",
+            "page": 38,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p039:fixed:c002",
+            "page": 39,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p039:fixed:c001",
+            "page": 39,
+            "section": "04_tai_chinh_hoc_phi"
+          }
+        ]
+      },
+      "strategy_B": {
+        "score": 2,
+        "reason": "Rank 1 (trang 38) và Rank 2 (trang 39) cung cấp đầy đủ quy trình trả góp FPT Pay và ngưỡng tối thiểu 3.000.000đ (dù Rank 3 bị lẫn sang trang 18 thuộc chương Nội quy).",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p038:para:c002",
+            "page": 38,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p039:para:c001",
+            "page": 39,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p018:para:c001",
+            "page": 18,
+            "section": "02_noi_quy_sinh_vien"
+          }
+        ]
+      },
+      "strategy_C": {
+        "score": 2,
+        "reason": "Rank 1 (trang 38) và Rank 2 (trang 39) cung cấp đầy đủ bằng chứng, đồng thời nhờ filter section='04_tai_chinh_hoc_phi' nên cả 3 chunk đều thuộc đúng chương Tài chính.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p038:para:c002",
+            "page": 38,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p039:para:c001",
+            "page": 39,
+            "section": "04_tai_chinh_hoc_phi"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p034:para:c001",
+            "page": 34,
+            "section": "04_tai_chinh_hoc_phi"
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q18",
+      "question": "Nếu sinh viên trả chậm tài liệu mượn tại thư viện thì mức tiền phạt quá hạn mỗi ngày là bao nhiêu, và nếu trả chậm trên 30 ngày thì bị xử lý thế nào?",
+      "gold_page": 65,
+      "question_filter": {
+        "section": "06_thu_vien"
+      },
+      "strategy_A": {
+        "score": 2,
+        "reason": "Rank 1 (p065:fixed:c002) chứa quy định trả chậm trên 30 ngày phải nộp bổ sung khoản bằng giá nhập tài liệu; Rank 2 (p065:fixed:c003) và Rank 3 (p064:fixed:c002) chứa mức phạt 5.000đ/tài liệu/ngày. Hợp Top-3 đủ 100% điều kiện.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p065:fixed:c002",
+            "page": 65,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p065:fixed:c003",
+            "page": 65,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p064:fixed:c002",
+            "page": 64,
+            "section": "06_thu_vien"
+          }
+        ]
+      },
+      "strategy_B": {
+        "score": 1,
+        "reason": "Rank 1 (p065:para:c002) nêu đúng mức phạt 5.000 đồng/tài liệu/ngày, nhưng thiếu điều kiện trả chậm trên 30 ngày phải đền bù giá nhập tài liệu (nằm ở chunk p065:para:c001 không lọt vào Top-3).",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p065:para:c002",
+            "page": 65,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p064:para:c003",
+            "page": 64,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p063:para:c003",
+            "page": 63,
+            "section": "06_thu_vien"
+          }
+        ]
+      },
+      "strategy_C": {
+        "score": 1,
+        "reason": "Giống B: Top-3 tuân thủ 100% filter '06_thu_vien' và trả lời được mức phạt 5.000đ/ngày ở Rank 1, nhưng thiếu nhánh điều kiện trả chậm trên 30 ngày ở p065:para:c001.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p065:para:c002",
+            "page": 65,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p064:para:c003",
+            "page": 64,
+            "section": "06_thu_vien"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p063:para:c003",
+            "page": 63,
+            "section": "06_thu_vien"
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q19",
+      "question": "Đối với sinh viên các ngành Trí tuệ nhân tạo hoặc Thiết kế vi mạch, cấu hình laptop tối thiểu yêu cầu RAM và GPU ra sao, và quy định sử dụng Macbook trong kỳ thi như thế nào?",
+      "gold_page": 75,
+      "question_filter": null,
+      "strategy_A": {
+        "score": 2,
+        "reason": "Rank 1 (p075:fixed:c002) chứa cấu hình tối thiểu ngành AI/Vi mạch (GPU >= 8GB, RAM >= 32GB) và quy định được dùng Macbook khi học; Rank 3 (p075:fixed:c003) chứa quy định bắt buộc dùng Windows khi thi và cấm máy ảo. Dù bị tách qua 2 chunk (khiến Hit@3 đơn chunk = False), tập Top-3 vẫn cung cấp đủ bằng chứng cho cả 2 vế câu hỏi.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p075:fixed:c002",
+            "page": 75,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p072:fixed:c001",
+            "page": 72,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p075:fixed:c003",
+            "page": 75,
+            "section": "07_cntt_it_support"
+          }
+        ]
+      },
+      "strategy_B": {
+        "score": 1,
+        "reason": "Rank 1 (p075:para:c002) chứa đầy đủ quy định sử dụng Macbook khi học và cấm máy ảo Windows trong phòng thi, nhưng Rank 2 và 3 lại lấy cấu hình laptop của ngành Luật/QTKD (trang 72) và CNTT/KTPM (trang 74), thiếu thông số RAM/GPU của ngành AI ở p075:para:c001.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p075:para:c002",
+            "page": 75,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p072:para:c001",
+            "page": 72,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p074:para:c001",
+            "page": 74,
+            "section": "07_cntt_it_support"
+          }
+        ]
+      },
+      "strategy_C": {
+        "score": 1,
+        "reason": "Giống B (câu không có filter): trả lời đầy đủ vế quy định Macbook/máy ảo trong kỳ thi (trang 75), nhưng thiếu vế thông số RAM >= 32GB, GPU >= 8GB của ngành AI.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p075:para:c002",
+            "page": 75,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p072:para:c001",
+            "page": 72,
+            "section": "07_cntt_it_support"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p074:para:c001",
+            "page": 74,
+            "section": "07_cntt_it_support"
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q20",
+      "question": "Khi di chuyển bằng tuyến Metro số 1 để đến Trường Đại học FPT, sinh viên cần xuống tại nhà ga nào và đón tiếp tuyến xe buýt điện số mấy ngay đối diện ga?",
+      "gold_page": 108,
+      "question_filter": null,
+      "strategy_A": {
+        "score": 2,
+        "reason": "Rank 1 (p108:fixed:c002) và Rank 2 (p108:fixed:c003) chứa đầy đủ thông tin xuống tại ga Khu Công nghệ cao và đón tiếp xe buýt điện số 165 ngay đối diện ga.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p108:fixed:c001",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p108:fixed:c002",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p104:fixed:c001",
+            "page": 104,
+            "section": "08_nhung_dieu_can_biet"
+          }
+        ]
+      },
+      "strategy_B": {
+        "score": 2,
+        "reason": "Rank 1 (p108:para:c001) và Rank 2 (p108:para:c002) chứa trọn vẹn cả hai ý: xuống ga Khu Công nghệ cao và bắt tuyến buýt điện 165 đối diện ga.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p108:para:c001",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p108:para:c002",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p104:para:c001",
+            "page": 104,
+            "section": "08_nhung_dieu_can_biet"
+          }
+        ]
+      },
+      "strategy_C": {
+        "score": 2,
+        "reason": "Giống B: Rank 1 và Rank 2 tại trang 108 cung cấp đầy đủ bằng chứng cho cả lộ trình Metro số 1 và tuyến xe buýt điện 165.",
+        "retrieved_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "fptu-handbook-2026:p108:para:c001",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "fptu-handbook-2026:p108:para:c002",
+            "page": 108,
+            "section": "08_nhung_dieu_can_biet"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "fptu-handbook-2026:p104:para:c001",
+            "page": 104,
+            "section": "08_nhung_dieu_can_biet"
+          }
+        ]
+      }
+    }
+  ]
+}
